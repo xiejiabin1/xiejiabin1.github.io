@@ -6,7 +6,7 @@
   <link href="http://xiejiabin1.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiejiabin1.github.io/"/>
-  <updated>2022-01-12T09:06:04.072Z</updated>
+  <updated>2022-01-14T01:57:32.667Z</updated>
   <id>http://xiejiabin1.github.io/</id>
   
   <author>
@@ -17,23 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://xiejiabin1.github.io/2022/01/12/hello-world/"/>
-    <id>http://xiejiabin1.github.io/2022/01/12/hello-world/</id>
-    <published>2022-01-12T09:06:04.072Z</published>
-    <updated>2022-01-12T09:06:04.072Z</updated>
+    <title>vue-cli脚手架的简介与搭建</title>
+    <link href="http://xiejiabin1.github.io/2022/01/14/blog1642120427/"/>
+    <id>http://xiejiabin1.github.io/2022/01/14/blog1642120427/</id>
+    <published>2022-01-14T00:33:47.000Z</published>
+    <updated>2022-01-14T01:57:32.667Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  &lt;strong&gt;Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统&lt;/strong&gt;，我们可以通过 vue-cli 这种脚手架工具来快速搭建vue项目。vue-cli</summary>
         
       
     
     
     
+    <category term="前端vue" scheme="http://xiejiabin1.github.io/categorie/%E5%89%8D%E7%AB%AFvue/"/>
+    
+    
+    <category term="vue-cli" scheme="http://xiejiabin1.github.io/tags/vue-cli/"/>
     
   </entry>
   

@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 先谢郭嘉的个人博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="vue-cli脚手架的简介与搭建, 先谢郭嘉的个人博客">
+    <meta name="description" content="
+  Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统，我们可以通过 vue-cli 这种脚手架工具来快速搭建vue项目。vue-cli 里存放了很多常用的项目骨架，直接拿来就可以搭建出一个拥有比较成熟项目结构的项目。下面我">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | 先谢郭嘉的个人博客</title>
+    <title>vue-cli脚手架的简介与搭建 | 先谢郭嘉的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -30,9 +31,9 @@
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
-<meta name="generator" content="Hexo 6.0.0">
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="先谢郭嘉的个人博客" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="先谢郭嘉的个人博客" type="application/atom+xml">
 </head>
 
 
@@ -312,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">vue-cli脚手架的简介与搭建</h1>
                 </div>
             </div>
         </div>
@@ -431,12 +432,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/vue-cli/">
+                                <span class="chip bg-color">vue-cli</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categorie/%E5%89%8D%E7%AB%AFvue/" class="post-category">
+                                前端vue
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -445,28 +459,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-12
+                    2022-01-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-12
+                    2022-01-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    75
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -481,24 +495,82 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <blockquote>
+<p>  <strong>Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统</strong>，我们可以通过 vue-cli 这种脚手架工具来快速搭建vue项目。vue-cli 里存放了很多常用的项目骨架，直接拿来就可以搭建出一个拥有比较成熟项目结构的项目。下面我们来看看vue-cli项目有那些搭建方法以及vue目录的详细介绍。</p>
+</blockquote>
+<h2 id="一、安装node-js"><a href="#一、安装node-js" class="headerlink" title="一、安装node.js"></a>一、安装node.js</h2><p><strong>要想使用 vue-cli，得先安装 node.js。</strong></p>
+<p>node.js 是一个可以让前端运行在 node.js 提供的服务器上的一个工具，换句话说，就是<strong>提供了一个服务器</strong>。</p>
+<h3 id="1、下载安装node"><a href="#1、下载安装node" class="headerlink" title="1、下载安装node"></a>1、下载安装node</h3><p>node官网：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a><br><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/1.png"><br>  点击选择<strong>长期支持版</strong>下载，node的安装很简单，这里就不多说明了，一直点next就好了。</p>
+<h3 id="2、配置环境变量"><a href="#2、配置环境变量" class="headerlink" title="2、配置环境变量"></a>2、配置环境变量</h3><p>如果下载的是后缀名为.msi的安装包的话，node的环境变量在安装的时候已经配置好了；如果下载的是后缀名为.zip的压缩包文件的话，还需要配置下环境变量。<br><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/2.png"><br>在path下添加node的目录就好了。我的路径是：D:\nodejs\</p>
+<h3 id="3、验证"><a href="#3、验证" class="headerlink" title="3、验证"></a>3、验证</h3><p>在命令提示符下输入 <code>node -v</code> 以及 <code>npm -v</code>（npm是安装的包管理工具）</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">node</span> -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/3.png"></p>
+<p>这个地方我还输入了<code>cnpm -v</code>，也就是我还安装了cnpm。安装cnpm的原因是因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，所以就安装了淘宝所提供的cnpm。<br>下面是cnpm的安装命令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/4.png"></p>
+<p>  <strong>nodejs安装成功</strong></p>
+<h2 id="二、安装vue-cli"><a href="#二、安装vue-cli" class="headerlink" title="二、安装vue-cli"></a>二、安装vue-cli</h2><h3 id="1、vue-cli有2-0和3-0版本之分"><a href="#1、vue-cli有2-0和3-0版本之分" class="headerlink" title="1、vue cli有2.0和3.0版本之分"></a>1、vue cli有2.0和3.0版本之分</h3><p>vue cli3.0版本和vue cli2.0版本的区别，请参考下面博客：</p>
+<p><strong>vue-cli版本（2.0,3.0）与 vue版本（2.x,3.x）：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/157b2d5c35a4">https://www.jianshu.com/p/157b2d5c35a4</a></strong></p>
+<h3 id="2、卸载vue-cli版本"><a href="#2、卸载vue-cli版本" class="headerlink" title="2、卸载vue-cli版本"></a>2、卸载vue-cli版本</h3><p>Vue cli的2.x和3.x的卸载方法，请参考下面博客：<strong>vue-cli 安装，卸载，安装指定版本，和创建项目问题相关整理：<a target="_blank" rel="noopener" href="https://blog.csdn.net/shi851051279/article/details/84928798">https://blog.csdn.net/shi851051279/article/details/84928798</a></strong></p>
+<h3 id="3、全局安装vue-cli"><a href="#3、全局安装vue-cli" class="headerlink" title="3、全局安装vue-cli"></a>3、全局安装vue-cli</h3><p>首先全局安装webpack</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g webpack  //安装成功后输入<span class="token variable"><span class="token variable">`</span>webpack -v<span class="token variable">`</span></span>出现版本号
+<span class="token function">npm</span> <span class="token function">install</span> webpack webpack-cli -g  //安装 webpack-cli 依赖<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+<p>然后再全局安装vue-cli</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --global vue-cli  //安装成功后输入<span class="token variable"><span class="token variable">`</span>vue -V<span class="token variable">`</span></span>出现版本号<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li>npm：指明使用 node.js 的命令。</li>
+<li>install：安装</li>
+<li>vue-cli：要安装的工具</li>
+<li>–global：全局安装</li>
+</ul>
+<p>测试下vue-cli是否安装成功，运行如下命令（<strong>注意最后的 V 是大写</strong>）：</p>
+ <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vue -V<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/5.png"><br>最后，初始化vue（不然在创建项目时会报错），在终端输入以下命令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g @vue/cli-init <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="三、使用命令搭建vue-cli项目"><a href="#三、使用命令搭建vue-cli项目" class="headerlink" title="三、使用命令搭建vue-cli项目"></a>三、使用命令搭建vue-cli项目</h2><p>  在终端中运行 cd 命令，进入想要创建项目的目录位置 。比如我们想把工程创建在 D盘中 D:\VSCode\space 目录下，首先在命令控制台中进入到这个文件夹。接着执行如下命令：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vue init webpack bloghtml  //最后一个参数是自定义的项目名称，我这里命名为：bloghtml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>等一会控制台会出现一些配置参数让你选择，基本默认就可以了。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">? Project name vue-demo <span class="token comment"># 项目名称，直接回车，按照括号中默认名字（注意这里的名字不能有大写字母，如果有会报错Sorry, name can no longer contain capital letters），阮一峰老师博客为什么文件名要小写 ，可以参考一下。</span>
+? Project description A Vue.js project <span class="token comment"># 项目描述,随便写</span>
+? Author <span class="token comment"># 作者名称</span>
+? Vue build standalone <span class="token comment"># 我选择的运行加编译时</span>
+	Runtime + Compiler: recommended <span class="token keyword">for</span> <span class="token function">most</span> <span class="token function">users</span>
+? Install vue-router? Yes <span class="token comment"># 是否需要 vue-router，路由肯定要的</span>
+? Use ESLint to lint your code? Yes <span class="token comment"># 是否使用 ESLint 作为代码规范.</span>
+? Pick an ESLint preset Standard <span class="token comment"># 一样的ESlint 相关</span>
+? Set up unit tests Yes <span class="token comment"># 是否安装单元测试</span>
+? Pick a <span class="token builtin class-name">test</span> runner 按需选择 <span class="token comment"># 测试模块</span>
+? Setup e2e tests with Nightwatch? 安装选择 <span class="token comment"># e2e 测试</span>
+? Should we run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> <span class="token function">install</span><span class="token variable">`</span></span> <span class="token keyword">for</span> you after the project has been created? <span class="token punctuation">(</span>recommended<span class="token punctuation">)</span> <span class="token function">npm</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/6.png"></p>
+<h2 id="四、使用vue-ui搭建vue-cli项目"><a href="#四、使用vue-ui搭建vue-cli项目" class="headerlink" title="四、使用vue ui搭建vue-cli项目"></a>四、使用vue ui搭建vue-cli项目</h2><p>  @vue/cli3.0增加一个可视化项目管理工具，全局安装完成cli3.0之后，可以直接在cmd输入命令：vue ui  启动即可，地址默认是：<a target="_blank" rel="noopener" href="http://localhost:8000/">http://localhost:8000</a><br><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/7.png"></p>
+<p>运行命令 vue ui , 就会启动一个本地服务，下面是<strong>vue ui的界面</strong>：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/8.png"></p>
+<p><strong>创建新项目</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/9.png"></p>
+<p><strong>选择手动预设</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/10.png"></p>
+<p><strong>除了默认的功能外选择router、vuex。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/11.png"></p>
+<p><strong>然后在配置中选择ESLint + Standard config。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/12.png"></p>
+<p><strong>最后创建项目，下面是项目创建成功界面。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiejiabin1/images/myblog/blog1642120427/13.png"></p>
 
                 
             </div>
@@ -525,7 +597,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiejiabin1.github.io/2022/01/12/hello-world/">http://xiejiabin1.github.io/2022/01/12/hello-world/</a>
+                    <a href="http://xiejiabin1.github.io/2022/01/14/blog1642120427/">http://xiejiabin1.github.io/2022/01/14/blog1642120427/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -562,7 +634,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/vue-cli/">
+                                    <span class="chip bg-color">vue-cli</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -731,7 +807,7 @@
         repo: 'blogMessage',
         owner: 'xiejiabin1',
         admin: ["xiejiabin1"],
-        id: '2022-01-12T17-06-04',
+        id: '2022-01-14T08-33-47',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -764,13 +840,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2022/01/12/hello-world/">
+                <a href="/2022/01/14/blog1642120427/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="vue-cli脚手架的简介与搭建">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">vue-cli脚手架的简介与搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -781,17 +857,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            先谢郭嘉
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categorie/%E5%89%8D%E7%AB%AFvue/" class="post-category">
+                                    前端vue
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/vue-cli/">
+                        <span class="chip bg-color">vue-cli</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -802,13 +890,13 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/12/hello-world/">
+                <a href="/2022/01/14/blog1642120427/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="vue-cli脚手架的简介与搭建">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">vue-cli脚手架的简介与搭建</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -819,17 +907,29 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            先谢郭嘉
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categorie/%E5%89%8D%E7%AB%AFvue/" class="post-category">
+                                    前端vue
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/vue-cli/">
+                        <span class="chip bg-color">vue-cli</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -883,8 +983,6 @@
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -892,8 +990,6 @@
 
 
 <!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1067,7 +1163,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">75</span>
+                        class="white-color">1.2k</span>
             
             
             
@@ -1263,14 +1359,6 @@ $(function () {
     
 
     <!-- 雪花特效 -->
-     
-        <script type="text/javascript">
-            // 只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
-            }
-        </script>
     
 
     <!-- 鼠标星星特效 -->
