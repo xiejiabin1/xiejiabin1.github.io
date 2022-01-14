@@ -6,7 +6,7 @@
   <link href="http://xiejiabin1.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiejiabin1.github.io/"/>
-  <updated>2022-01-14T00:33:47.000Z</updated>
+  <updated>2022-01-14T07:15:00.000Z</updated>
   <id>http://xiejiabin1.github.io/</id>
   
   <author>
@@ -17,9 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>MybatisPlus代码生成器AutoGenerator的简介和使用</title>
+    <link href="http://xiejiabin1.github.io/2022/01/14/1642136664/"/>
+    <id>http://xiejiabin1.github.io/2022/01/14/1642136664/</id>
+    <published>2022-01-14T07:15:00.000Z</published>
+    <updated>2022-01-14T07:15:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  AutoGenerator 是 MyBatis-Plus 的代码生成器，通过 AutoGenerator 可以快速生成 Entity、Mapper、Mapper XML、Service、Controller</summary>
+        
+      
+    
+    
+    
+    <category term="Mybatis" scheme="http://xiejiabin1.github.io/categorie/Mybatis/"/>
+    
+    
+    <category term="MybatisPlus   Mybatis   AutoGenerator" scheme="http://xiejiabin1.github.io/tags/MybatisPlus-Mybatis-AutoGenerator/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MybatisPlus中通用mapper的CRUD操作封装</title>
+    <link href="http://xiejiabin1.github.io/2022/01/14/1642144500/"/>
+    <id>http://xiejiabin1.github.io/2022/01/14/1642144500/</id>
+    <published>2022-01-14T05:04:24.000Z</published>
+    <updated>2022-01-14T05:04:24.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  使用Mybatis的开发者，大多数都会遇到一个问题，就是要写&lt;strong&gt;大量的SQL在xml文件&lt;/strong&gt;中，除了特殊的业务逻辑SQL之外，还有&lt;strong&gt;大量结构类似的增删改查SQL&lt;/strong&gt;。而且，当数据库表结构改动</summary>
+        
+      
+    
+    
+    
+    <category term="Mybatis" scheme="http://xiejiabin1.github.io/categorie/Mybatis/"/>
+    
+    
+    <category term="MybatisPlus   Mybatis" scheme="http://xiejiabin1.github.io/tags/MybatisPlus-Mybatis/"/>
+    
+  </entry>
+  
+  <entry>
     <title>vue-cli脚手架的简介与搭建</title>
-    <link href="http://xiejiabin1.github.io/1642121670.html"/>
-    <id>http://xiejiabin1.github.io/1642121670.html</id>
+    <link href="http://xiejiabin1.github.io/2022/01/14/1642120427/"/>
+    <id>http://xiejiabin1.github.io/2022/01/14/1642120427/</id>
     <published>2022-01-14T00:33:47.000Z</published>
     <updated>2022-01-14T00:33:47.000Z</updated>
     
