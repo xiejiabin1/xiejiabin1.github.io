@@ -6,7 +6,7 @@
   <link href="http://xiejiabin1.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiejiabin1.github.io/"/>
-  <updated>2022-01-14T07:15:00.000Z</updated>
+  <updated>2022-01-14T09:19:44.000Z</updated>
   <id>http://xiejiabin1.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>win10中docker的安装与使用</title>
+    <link href="http://xiejiabin1.github.io/2022/01/14/1642151984/"/>
+    <id>http://xiejiabin1.github.io/2022/01/14/1642151984/</id>
+    <published>2022-01-14T09:19:44.000Z</published>
+    <updated>2022-01-14T09:19:44.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows</summary>
+        
+      
+    
+    
+    
+    <category term="docker" scheme="http://xiejiabin1.github.io/categorie/docker/"/>
+    
+    
+    <category term="docker for windows" scheme="http://xiejiabin1.github.io/tags/docker-for-windows/"/>
+    
+    <category term="docker" scheme="http://xiejiabin1.github.io/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>MybatisPlus代码生成器AutoGenerator的简介和使用</title>
@@ -38,7 +66,11 @@
     <category term="Mybatis" scheme="http://xiejiabin1.github.io/categorie/Mybatis/"/>
     
     
-    <category term="MybatisPlus   Mybatis   AutoGenerator" scheme="http://xiejiabin1.github.io/tags/MybatisPlus-Mybatis-AutoGenerator/"/>
+    <category term="MybatisPlus" scheme="http://xiejiabin1.github.io/tags/MybatisPlus/"/>
+    
+    <category term="Mybatis" scheme="http://xiejiabin1.github.io/tags/Mybatis/"/>
+    
+    <category term="AutoGenerator" scheme="http://xiejiabin1.github.io/tags/AutoGenerator/"/>
     
   </entry>
   
@@ -64,7 +96,9 @@
     <category term="Mybatis" scheme="http://xiejiabin1.github.io/categorie/Mybatis/"/>
     
     
-    <category term="MybatisPlus   Mybatis" scheme="http://xiejiabin1.github.io/tags/MybatisPlus-Mybatis/"/>
+    <category term="MybatisPlus" scheme="http://xiejiabin1.github.io/tags/MybatisPlus/"/>
+    
+    <category term="Mybatis" scheme="http://xiejiabin1.github.io/tags/Mybatis/"/>
     
   </entry>
   
@@ -91,6 +125,8 @@
     
     
     <category term="vue-cli" scheme="http://xiejiabin1.github.io/tags/vue-cli/"/>
+    
+    <category term="vue" scheme="http://xiejiabin1.github.io/tags/vue/"/>
     
   </entry>
   

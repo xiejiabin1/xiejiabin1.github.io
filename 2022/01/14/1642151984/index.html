@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="vue-cli脚手架的简介与搭建, 先谢郭嘉的个人博客">
+    <meta name="keywords" content="win10中docker的安装与使用, 先谢郭嘉的个人博客">
     <meta name="description" content="
-  Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统，我们可以通过 vue-cli 这种脚手架工具来快速搭建vue项目。vue-cli 里存放了很多常用的项目骨架，直接拿来就可以搭建出一个拥有比较成熟项目结构的项目。下面我">
+Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。————摘自百度">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vue-cli脚手架的简介与搭建 | 先谢郭嘉的个人博客</title>
+    <title>win10中docker的安装与使用 | 先谢郭嘉的个人博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/background.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vue-cli脚手架的简介与搭建</h1>
+                    <h1 class="description center-align post-title">win10中docker的安装与使用</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/vue-cli/">
-                                <span class="chip bg-color">vue-cli</span>
+                            <a href="/tags/docker-for-windows/">
+                                <span class="chip bg-color">docker for windows</span>
                             </a>
                         
-                            <a href="/tags/vue/">
-                                <span class="chip bg-color">vue</span>
+                            <a href="/tags/docker/">
+                                <span class="chip bg-color">docker</span>
                             </a>
                         
                     </div>
@@ -450,8 +450,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categorie/%E5%89%8D%E7%AB%AFvue/" class="post-category">
-                                前端vue
+                            <a href="/categorie/docker/" class="post-category">
+                                docker
                             </a>
                         
                     </div>
@@ -477,14 +477,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    781
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    2 分
                 </div>
                 
 
@@ -508,73 +508,44 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>  <strong>Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统</strong>，我们可以通过 vue-cli 这种脚手架工具来快速搭建vue项目。vue-cli 里存放了很多常用的项目骨架，直接拿来就可以搭建出一个拥有比较成熟项目结构的项目。下面我们来看看vue-cli项目有那些搭建方法以及vue目录的详细介绍。</p>
+<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。————摘自百度百科</p>
 </blockquote>
-<h2 id="一、安装node-js"><a href="#一、安装node-js" class="headerlink" title="一、安装node.js"></a>一、安装node.js</h2><p><strong>要想使用 vue-cli，得先安装 node.js。</strong></p>
-<p>node.js 是一个可以让前端运行在 node.js 提供的服务器上的一个工具，换句话说，就是<strong>提供了一个服务器</strong>。</p>
-<h3 id="1、下载安装node"><a href="#1、下载安装node" class="headerlink" title="1、下载安装node"></a>1、下载安装node</h3><p>node官网：<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">https://nodejs.org/zh-cn/</a><br><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/1.png"><br>  点击选择<strong>长期支持版</strong>下载，node的安装很简单，这里就不多说明了，一直点next就好了。</p>
-<h3 id="2、配置环境变量"><a href="#2、配置环境变量" class="headerlink" title="2、配置环境变量"></a>2、配置环境变量</h3><p>如果下载的是后缀名为.msi的安装包的话，node的环境变量在安装的时候已经配置好了；如果下载的是后缀名为.zip的压缩包文件的话，还需要配置下环境变量。<br><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/2.png"><br>在path下添加node的目录就好了。我的路径是：D:\nodejs\</p>
-<h3 id="3、验证"><a href="#3、验证" class="headerlink" title="3、验证"></a>3、验证</h3><p>在命令提示符下输入 <code>node -v</code> 以及 <code>npm -v</code>（npm是安装的包管理工具）</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">node</span> -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> -v<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/3.png"></p>
-<p>这个地方我还输入了<code>cnpm -v</code>，也就是我还安装了cnpm。安装cnpm的原因是因为npm安装插件是从国外服务器下载，受网络影响大，可能出现异常，所以就安装了淘宝所提供的cnpm。<br>下面是cnpm的安装命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g cnpm --registry<span class="token operator">=</span>https://registry.npm.taobao.org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/4.png"></p>
-<p><strong>nodejs安装成功</strong></p>
-<h2 id="二、安装vue-cli"><a href="#二、安装vue-cli" class="headerlink" title="二、安装vue-cli"></a>二、安装vue-cli</h2><h3 id="1、vue-cli有2-0和3-0版本之分"><a href="#1、vue-cli有2-0和3-0版本之分" class="headerlink" title="1、vue cli有2.0和3.0版本之分"></a>1、vue cli有2.0和3.0版本之分</h3><p>vue cli3.0版本和vue cli2.0版本的区别，请参考下面博客：</p>
-<p><strong>vue-cli版本（2.0,3.0）与 vue版本（2.x,3.x）：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/157b2d5c35a4">https://www.jianshu.com/p/157b2d5c35a4</a></strong></p>
-<h3 id="2、卸载vue-cli版本"><a href="#2、卸载vue-cli版本" class="headerlink" title="2、卸载vue-cli版本"></a>2、卸载vue-cli版本</h3><p>Vue cli的2.x和3.x的卸载方法，请参考下面博客：<strong>vue-cli 安装，卸载，安装指定版本，和创建项目问题相关整理：<a target="_blank" rel="noopener" href="https://blog.csdn.net/shi851051279/article/details/84928798">https://blog.csdn.net/shi851051279/article/details/84928798</a></strong></p>
-<h3 id="3、全局安装vue-cli"><a href="#3、全局安装vue-cli" class="headerlink" title="3、全局安装vue-cli"></a>3、全局安装vue-cli</h3><p>首先全局安装webpack</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g webpack  //安装成功后输入<span class="token variable"><span class="token variable">`</span>webpack -v<span class="token variable">`</span></span>出现版本号
-<span class="token function">npm</span> <span class="token function">install</span> webpack webpack-cli -g  //安装 webpack-cli 依赖<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>然后再全局安装vue-cli</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> --global vue-cli  //安装成功后输入<span class="token variable"><span class="token variable">`</span>vue -V<span class="token variable">`</span></span>出现版本号<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<ul>
-<li>npm：指明使用 node.js 的命令。</li>
-<li>install：安装</li>
-<li>vue-cli：要安装的工具</li>
-<li>–global：全局安装</li>
-</ul>
-<p>测试下vue-cli是否安装成功，运行如下命令（<strong>注意最后的 V 是大写</strong>）：</p>
- <pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vue -V<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/5.png"><br>最后，初始化vue（不然在创建项目时会报错），在终端输入以下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> -g @vue/cli-init <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<h2 id="三、使用命令搭建vue-cli项目"><a href="#三、使用命令搭建vue-cli项目" class="headerlink" title="三、使用命令搭建vue-cli项目"></a>三、使用命令搭建vue-cli项目</h2><p>  在终端中运行 cd 命令，进入想要创建项目的目录位置 。比如我们想把工程创建在 D盘中 D:\VSCode\space 目录下，首先在命令控制台中进入到这个文件夹。接着执行如下命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">vue init webpack bloghtml  //最后一个参数是自定义的项目名称，我这里命名为：bloghtml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>等一会控制台会出现一些配置参数让你选择，基本默认就可以了。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">? Project name vue-demo <span class="token comment"># 项目名称，直接回车，按照括号中默认名字（注意这里的名字不能有大写字母，如果有会报错Sorry, name can no longer contain capital letters），阮一峰老师博客为什么文件名要小写 ，可以参考一下。</span>
-? Project description A Vue.js project <span class="token comment"># 项目描述,随便写</span>
-? Author <span class="token comment"># 作者名称</span>
-? Vue build standalone <span class="token comment"># 我选择的运行加编译时</span>
-	Runtime + Compiler: recommended <span class="token keyword">for</span> <span class="token function">most</span> <span class="token function">users</span>
-? Install vue-router? Yes <span class="token comment"># 是否需要 vue-router，路由肯定要的</span>
-? Use ESLint to lint your code? Yes <span class="token comment"># 是否使用 ESLint 作为代码规范.</span>
-? Pick an ESLint preset Standard <span class="token comment"># 一样的ESlint 相关</span>
-? Set up unit tests Yes <span class="token comment"># 是否安装单元测试</span>
-? Pick a <span class="token builtin class-name">test</span> runner 按需选择 <span class="token comment"># 测试模块</span>
-? Setup e2e tests with Nightwatch? 安装选择 <span class="token comment"># e2e 测试</span>
-? Should we run <span class="token variable"><span class="token variable">`</span><span class="token function">npm</span> <span class="token function">install</span><span class="token variable">`</span></span> <span class="token keyword">for</span> you after the project has been created? <span class="token punctuation">(</span>recommended<span class="token punctuation">)</span> <span class="token function">npm</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/6.png"></p>
-<h2 id="四、使用vue-ui搭建vue-cli项目"><a href="#四、使用vue-ui搭建vue-cli项目" class="headerlink" title="四、使用vue ui搭建vue-cli项目"></a>四、使用vue ui搭建vue-cli项目</h2><p>  @vue/cli3.0增加一个可视化项目管理工具，全局安装完成cli3.0之后，可以直接在cmd输入命令：vue ui  启动即可，地址默认是：<a target="_blank" rel="noopener" href="http://localhost:8000/">http://localhost:8000</a><br><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/7.png"></p>
-<p>运行命令 vue ui , 就会启动一个本地服务，下面是<strong>vue ui的界面</strong>：</p>
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/8.png"></p>
-<p><strong>创建新项目</strong></p>
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/9.png"></p>
-<p><strong>选择手动预设</strong></p>
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/10.png"></p>
-<p><strong>除了默认的功能外选择router、vuex。</strong></p>
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/11.png"></p>
-<p><strong>然后在配置中选择ESLint + Standard config。</strong></p>
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/12.png"></p>
-<p><strong>最后创建项目，下面是项目创建成功界面。</strong></p>
-<p><img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/13.png"></p>
+<h2 id="1、安装docker"><a href="#1、安装docker" class="headerlink" title="1、安装docker"></a>1、安装docker</h2><h3 id="安装条件"><a href="#安装条件" class="headerlink" title="安装条件"></a>安装条件</h3><p>  1、docker for windows只适用于win8以上的系统，win10是现在的主流，所以这里我将介绍的是win10系统中docker的安装和使用。</p>
+<p>  2、开启电脑的虚拟化，一般电脑都是默认开启的。可以在任务管理器-&gt;性能-&gt;CPU下查看虚拟化是否开启。</p>
+<p>  3、查看Hyper-v是否开启，启用Hyper-v可以在电脑中配置虚拟机。开启步骤：控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;最后重启电脑就可以了。</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/1.png"></p>
+<h3 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h3><p>官网下载链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a>，选择稳定版下载。</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/2.png"></p>
+<p>安装这里没什么好描述的，一直按确定就好了。</p>
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>进入cmd窗口查看docker是否安装成功。（dicker –version）</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/3.png"></p>
+<h2 id="2、docker配置"><a href="#2、docker配置" class="headerlink" title="2、docker配置"></a>2、docker配置</h2><h3 id="注册登录账号"><a href="#注册登录账号" class="headerlink" title="注册登录账号"></a>注册登录账号</h3><p>下载安装完成后，双击图标进入，程序在运行的话，桌面右下角通知栏会有一个小鲸鱼的图标。这里需要注册登录一个账号，可以在官网注册一个账号。官网链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/4.png"></p>
+<h3 id="配置镜像加速"><a href="#配置镜像加速" class="headerlink" title="配置镜像加速"></a>配置镜像加速</h3><p>为什么要配置镜像加速，因为docker在国内的下载速度特别慢，所以我们通常会在配置一下镜像加速。一般用的是阿里云的免费加速。配置步骤：登录阿里云-&gt;控制台-&gt;搜索容器镜像服务（或者左上角产品与服务中找）,然后就是下面的图片示例：</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/5.png"></p>
+<p>复制加速器地址，将地址粘贴到registry-mirrors的json字符串中。</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/6.png"></p>
+<h2 id="3、docker可视化界面Portainer"><a href="#3、docker可视化界面Portainer" class="headerlink" title="3、docker可视化界面Portainer"></a>3、docker可视化界面Portainer</h2><h3 id="下载prtainer镜像"><a href="#下载prtainer镜像" class="headerlink" title="下载prtainer镜像"></a>下载prtainer镜像</h3><p>先在docker中搜索查看Portainer镜像有哪些（docker search portainer）</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/7.png"></p>
+<p><strong>选择第一个portainer/portainer下载（docker pull portainer/portainer）</strong></p>
+<h3 id="运行portainer镜像生成portainer容器"><a href="#运行portainer镜像生成portainer容器" class="headerlink" title="运行portainer镜像生成portainer容器"></a>运行portainer镜像生成portainer容器</h3><p> 运行portainer分为单机运行和集群运行，由于我们是用来开发和测试，这里选择单机运行。以下是命令行：</p>
+<pre class="line-numbers language-none"><code class="language-none">docker run -d -p 9000:9000 \
+--restart=always \
+-v /var/run/docker.sock:/var/run/docker.sock \
+--name portainer \portainer/portainer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="输入localhost-9000登录portainer"><a href="#输入localhost-9000登录portainer" class="headerlink" title="输入localhost:9000登录portainer"></a>输入localhost:9000登录portainer</h3><p>1、首次登陆需要注册用户<br>2、单机版选择Local</p>
+<h2 id="4、Portainer的使用"><a href="#4、Portainer的使用" class="headerlink" title="4、Portainer的使用"></a>4、Portainer的使用</h2><p>输入账户和密码登录</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/8.png"></p>
+<p>登录成功后就可以看到自己的docker实例了</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/9.png"></p>
+<p>点击docker，你可以看到自己的镜像（images）和容器（containers）</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/10.png"></p>
+<p>在容器中，不用命令就可以管理容器。不过对容器参数进行i修改后需要重启容器才能生效。</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/11.png"></p>
+<p>可以添加新镜像（需要配置加速，不然下载速度很慢，有时候就算加速了也比较慢，可以换个加速器）</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/12.png"></p>
+<p>还可以搜索常用镜像下载</p>
+<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/13.png"></p>
 
                 
             </div>
@@ -601,7 +572,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiejiabin1.github.io/2022/01/14/1642120427/">http://xiejiabin1.github.io/2022/01/14/1642120427/</a>
+                    <a href="http://xiejiabin1.github.io/2022/01/14/1642151984/">http://xiejiabin1.github.io/2022/01/14/1642151984/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -639,12 +610,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/vue-cli/">
-                                    <span class="chip bg-color">vue-cli</span>
+                                <a href="/tags/docker-for-windows/">
+                                    <span class="chip bg-color">docker for windows</span>
                                 </a>
                             
-                                <a href="/tags/vue/">
-                                    <span class="chip bg-color">vue</span>
+                                <a href="/tags/docker/">
+                                    <span class="chip bg-color">docker</span>
                                 </a>
                             
                         </div>
@@ -815,7 +786,7 @@
         repo: 'blogMessage',
         owner: 'xiejiabin1',
         admin: ["xiejiabin1"],
-        id: '2022-01-14T08-33-47',
+        id: '2022-01-14T17-19-44',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -843,16 +814,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/01/14/1642144500/">
+                <a href="/2022/01/14/1642151984/">
                     <div class="card-image">
                         
-                        <img src="/images/MybatisPlus%E4%B8%AD%E9%80%9A%E7%94%A8mapper%E7%9A%84CRUD%E6%93%8D%E4%BD%9C%E5%B0%81%E8%A3%85/background.png" class="responsive-img" alt="MybatisPlus中通用mapper的CRUD操作封装">
+                        <img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.png" class="responsive-img" alt="win10中docker的安装与使用">
                         
-                        <span class="card-title">MybatisPlus中通用mapper的CRUD操作封装</span>
+                        <span class="card-title">win10中docker的安装与使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -862,9 +834,62 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categorie/docker/" class="post-category">
+                                    docker
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/docker-for-windows/">
+                        <span class="chip bg-color">docker for windows</span>
+                    </a>
+                    
+                    <a href="/tags/docker/">
+                        <span class="chip bg-color">docker</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/01/14/1642136664/">
+                    <div class="card-image">
+                        
+                        <img src="/images/MybatisPlus%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8AutoGenerator%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/background.png" class="responsive-img" alt="MybatisPlus代码生成器AutoGenerator的简介和使用">
+                        
+                        <span class="card-title">MybatisPlus代码生成器AutoGenerator的简介和使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -888,57 +913,8 @@
                         <span class="chip bg-color">Mybatis</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/14/1642120427/">
-                    <div class="card-image">
-                        
-                        <img src="/images/vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E6%90%AD%E5%BB%BA/background.png" class="responsive-img" alt="vue-cli脚手架的简介与搭建">
-                        
-                        <span class="card-title">vue-cli脚手架的简介与搭建</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categorie/%E5%89%8D%E7%AB%AFvue/" class="post-category">
-                                    前端vue
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/vue-cli/">
-                        <span class="chip bg-color">vue-cli</span>
-                    </a>
-                    
-                    <a href="/tags/vue/">
-                        <span class="chip bg-color">vue</span>
+                    <a href="/tags/AutoGenerator/">
+                        <span class="chip bg-color">AutoGenerator</span>
                     </a>
                     
                 </div>
