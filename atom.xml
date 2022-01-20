@@ -6,7 +6,7 @@
   <link href="http://xiejiabin1.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiejiabin1.github.io/"/>
-  <updated>2022-01-14T09:19:44.000Z</updated>
+  <updated>2022-01-20T05:34:31.000Z</updated>
   <id>http://xiejiabin1.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx跨域的解决方法</title>
+    <link href="http://xiejiabin1.github.io/2022/01/20/1642656872/"/>
+    <id>http://xiejiabin1.github.io/2022/01/20/1642656872/</id>
+    <published>2022-01-20T05:34:31.000Z</published>
+    <updated>2022-01-20T05:34:31.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  博主开发了一个动静分离的博客，动静分离免不了静态资源和后台代码的部署，静态资源管理我用的是Nginx反向代理服务器。选择Nginx的原因是它内存消耗少、稳定性高、代码相对简单些。在项目编写的时候博主就遇到了浏览器的跨域问题，而本篇文章将讲述跨域</summary>
+        
+      
+    
+    
+    
+    <category term="Nginx" scheme="http://xiejiabin1.github.io/categorie/Nginx/"/>
+    
+    
+    <category term="nginx" scheme="http://xiejiabin1.github.io/tags/nginx/"/>
+    
+    <category term="跨域" scheme="http://xiejiabin1.github.io/tags/%E8%B7%A8%E5%9F%9F/"/>
+    
+    <category term="cookie" scheme="http://xiejiabin1.github.io/tags/cookie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Lombok的简介与使用以及总结</title>
+    <link href="http://xiejiabin1.github.io/2022/01/20/1642656390/"/>
+    <id>http://xiejiabin1.github.io/2022/01/20/1642656390/</id>
+    <published>2022-01-20T05:26:30.000Z</published>
+    <updated>2022-01-20T05:26:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写getter/se</summary>
+        
+      
+    
+    
+    
+    <category term="Lombok" scheme="http://xiejiabin1.github.io/categorie/Lombok/"/>
+    
+    
+    <category term="Lombok" scheme="http://xiejiabin1.github.io/tags/Lombok/"/>
+    
+  </entry>
   
   <entry>
     <title>win10中docker的安装与使用</title>

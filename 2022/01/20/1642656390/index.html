@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="win10中docker的安装与使用, 先谢郭嘉&#39;blog">
+    <meta name="keywords" content="Lombok的简介与使用以及总结, 先谢郭嘉&#39;blog">
     <meta name="description" content="
-Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。————摘自百度">
+  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写gett">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>win10中docker的安装与使用 | 先谢郭嘉&#39;blog</title>
+    <title>Lombok的简介与使用以及总结 | 先谢郭嘉&#39;blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +313,12 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/Lombok%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%80%BB%E7%BB%93/background.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">win10中docker的安装与使用</h1>
+                    <h1 class="description center-align post-title">Lombok的简介与使用以及总结</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/docker-for-windows/">
-                                <span class="chip bg-color">docker for windows</span>
-                            </a>
-                        
-                            <a href="/tags/docker/">
-                                <span class="chip bg-color">docker</span>
+                            <a href="/tags/Lombok/">
+                                <span class="chip bg-color">Lombok</span>
                             </a>
                         
                     </div>
@@ -450,8 +446,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categorie/docker/" class="post-category">
-                                docker
+                            <a href="/categorie/Lombok/" class="post-category">
+                                Lombok
                             </a>
                         
                     </div>
@@ -463,28 +459,28 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-14
+                    2022-01-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-14
+                    2022-01-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    781
+                    955
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    3 分
                 </div>
                 
 
@@ -508,44 +504,43 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。————摘自百度百科</p>
+<p>  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写getter/setter方法了。这篇文章将讲述lombok的使用和一些自己的总结。</p>
 </blockquote>
-<h2 id="1、安装docker"><a href="#1、安装docker" class="headerlink" title="1、安装docker"></a>1、安装docker</h2><h3 id="安装条件"><a href="#安装条件" class="headerlink" title="安装条件"></a>安装条件</h3><p>  1、docker for windows只适用于win8以上的系统，win10是现在的主流，所以这里我将介绍的是win10系统中docker的安装和使用。</p>
-<p>  2、开启电脑的虚拟化，一般电脑都是默认开启的。可以在任务管理器-&gt;性能-&gt;CPU下查看虚拟化是否开启。</p>
-<p>  3、查看Hyper-v是否开启，启用Hyper-v可以在电脑中配置虚拟机。开启步骤：控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;最后重启电脑就可以了。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/1.png"></p>
-<h3 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h3><p>官网下载链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a>，选择稳定版下载。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/2.png"></p>
-<p>安装这里没什么好描述的，一直按确定就好了。</p>
-<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>进入cmd窗口查看docker是否安装成功。（dicker –version）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/3.png"></p>
-<h2 id="2、docker配置"><a href="#2、docker配置" class="headerlink" title="2、docker配置"></a>2、docker配置</h2><h3 id="注册登录账号"><a href="#注册登录账号" class="headerlink" title="注册登录账号"></a>注册登录账号</h3><p>下载安装完成后，双击图标进入，程序在运行的话，桌面右下角通知栏会有一个小鲸鱼的图标。这里需要注册登录一个账号，可以在官网注册一个账号。官网链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/4.png"></p>
-<h3 id="配置镜像加速"><a href="#配置镜像加速" class="headerlink" title="配置镜像加速"></a>配置镜像加速</h3><p>为什么要配置镜像加速，因为docker在国内的下载速度特别慢，所以我们通常会在配置一下镜像加速。一般用的是阿里云的免费加速。配置步骤：登录阿里云-&gt;控制台-&gt;搜索容器镜像服务（或者左上角产品与服务中找）,然后就是下面的图片示例：</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/5.png"></p>
-<p>复制加速器地址，将地址粘贴到registry-mirrors的json字符串中。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/6.png"></p>
-<h2 id="3、docker可视化界面Portainer"><a href="#3、docker可视化界面Portainer" class="headerlink" title="3、docker可视化界面Portainer"></a>3、docker可视化界面Portainer</h2><h3 id="下载prtainer镜像"><a href="#下载prtainer镜像" class="headerlink" title="下载prtainer镜像"></a>下载prtainer镜像</h3><p>先在docker中搜索查看Portainer镜像有哪些（docker search portainer）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/7.png"></p>
-<p><strong>选择第一个portainer/portainer下载（docker pull portainer/portainer）</strong></p>
-<h3 id="运行portainer镜像生成portainer容器"><a href="#运行portainer镜像生成portainer容器" class="headerlink" title="运行portainer镜像生成portainer容器"></a>运行portainer镜像生成portainer容器</h3><p> 运行portainer分为单机运行和集群运行，由于我们是用来开发和测试，这里选择单机运行。以下是命令行：</p>
-<pre class="line-numbers language-none"><code class="language-none">docker run -d -p 9000:9000 \
---restart=always \
--v /var/run/docker.sock:/var/run/docker.sock \
---name portainer \portainer/portainer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="输入localhost-9000登录portainer"><a href="#输入localhost-9000登录portainer" class="headerlink" title="输入localhost:9000登录portainer"></a>输入localhost:9000登录portainer</h3><p>1、首次登陆需要注册用户<br>2、单机版选择Local</p>
-<h2 id="4、Portainer的使用"><a href="#4、Portainer的使用" class="headerlink" title="4、Portainer的使用"></a>4、Portainer的使用</h2><p>输入账户和密码登录</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/8.png"></p>
-<p>登录成功后就可以看到自己的docker实例了</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/9.png"></p>
-<p>点击docker，你可以看到自己的镜像（images）和容器（containers）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/10.png"></p>
-<p>在容器中，不用命令就可以管理容器。不过对容器参数进行i修改后需要重启容器才能生效。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/11.png"></p>
-<p>可以添加新镜像（需要配置加速，不然下载速度很慢，有时候就算加速了也比较慢，可以换个加速器）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/12.png"></p>
-<p>还可以搜索常用镜像下载</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/13.png"></p>
+<hr>
+<h2 id="一、Lombok简介"><a href="#一、Lombok简介" class="headerlink" title="一、Lombok简介"></a>一、Lombok简介</h2><p>  Lombok 是一种 Java 实用工具，可用来帮助开发人员消除 Java 的冗长，尤其是对于简单的 Java 对象（POJO）。它通过注释实现这一目的。通过在开发环境中实现  Lombok，我们可以节省构建诸如 hashCode() 和 equals() 这样的方法以及以往用来分类各种 accessor 和 mutator 的大量时间。</p>
+<p>  Lombo之所以能自动生成代码，最终够达到在源码中没有getter和setter方法，但是在编译生成的字节码文件中有getter和setter方法的效果，是因为它在注解解析上做了“手脚”。具体是如何实现的，这个就需要阅读源码了。博主还没有阅读过，这里只是简单的讲下它的使用说明，以及自己的一些经验总结。</p>
+<p><strong>GitHub链接：<a target="_blank" rel="noopener" href="https://github.com/rzwitserloot/lombok">https://github.com/rzwitserloot/lombok</a></strong></p>
+<h2 id="二、Lombok使用"><a href="#二、Lombok使用" class="headerlink" title="二、Lombok使用"></a>二、Lombok使用</h2><h3 id="1、加入maven依赖"><a href="#1、加入maven依赖" class="headerlink" title="1、加入maven依赖"></a>1、加入maven依赖</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">&gt;</span></span>
+    <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
+    <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
+    <span class="token generics"><span class="token punctuation">&lt;</span>version<span class="token punctuation">&gt;</span></span><span class="token number">1.18</span><span class="token number">.12</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2、常用注解介绍"><a href="#2、常用注解介绍" class="headerlink" title="2、常用注解介绍"></a>2、常用注解介绍</h3><h4 id="Date"><a href="#Date" class="headerlink" title="@Date"></a>@Date</h4><p>@Data注解在类上，会为类的所有属性自动生成setter/getter、equals、canEqual、hashCode、toString方法，如果是final属性，则不会为该属性生成setter方法。</p>
+<hr>
+<h4 id="Getter-Setter"><a href="#Getter-Setter" class="headerlink" title="@Getter/@Setter"></a>@Getter/@Setter</h4><p>使用@Getter/@Setter注解，此注解在属性上，可以为相应的属性自动生成Getter/Setter方法。</p>
+<hr>
+<h4 id="NonNull"><a href="#NonNull" class="headerlink" title="@NonNull"></a>@NonNull</h4><p>该注解用在属性或构造器上，Lombok会生成一个非空的声明，可用于校验参数，能帮助避免空指针。</p>
+<hr>
+<h4 id="EqualsAndHashCode"><a href="#EqualsAndHashCode" class="headerlink" title="@EqualsAndHashCode"></a>@EqualsAndHashCode</h4><p>自动生成 equals(Object other) 和 hashcode() 方法。说到这个方法，就要说说equals和hashcode的关系了。</p>
+<p>由于equals比较的太全面比较复杂，所以每当需要对比的时候，<strong>首先用hashCode()去对比</strong>，如果hashCode()不一样，则表示这两个对象肯定不相等（也就是不必再用equal()去再对比了）,如果hashCode()相同，此时再对比他们的equal()，如果equal()也相同，则表示这两个对象是真的相同了，这样既能大大提高了效率也保证了对比的绝对正确性。</p>
+<hr>
+<h4 id="NoArgsConstructor-RequiredArgsConstructor-和-AllArgsConstructor"><a href="#NoArgsConstructor-RequiredArgsConstructor-和-AllArgsConstructor" class="headerlink" title="@NoArgsConstructor, @RequiredArgsConstructor 和 @AllArgsConstructor"></a>@NoArgsConstructor, @RequiredArgsConstructor 和 @AllArgsConstructor</h4><p>分别对应无参构造器、部分参数构造器、全参构造器。Lombok没法实现多种参数构造器的重载。</p>
+<hr>
+<h4 id="Slf4j"><a href="#Slf4j" class="headerlink" title="@Slf4j"></a>@Slf4j</h4><p>注解在类，生成log变量，严格意义来说是常量，要打日志就可以直接打，不用再手动 new log 静态常量了。</p>
+<hr>
+<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p><strong>优点：</strong></p>
+<ul>
+<li>让代码变得简洁</li>
+<li>通过注解的形式消除 Java 的冗长且编译时自动生成，提高了一定的开发效率。</li>
+</ul>
+<p><strong>缺点：</strong></p>
+<ul>
+<li>不支持多种参数构造器的重载</li>
+<li>降低了源代码的可读性和完整性</li>
+<li>需要强制下载Lombok插件</li>
+</ul>
+<p>  对于我来说Lombok是一个好用的工具，在一般的项目开发中都可以用得上，但是在逻辑业务比较复杂的情况下，及并不推荐了，我们结合具体业务场景和项目实际情况。比如说，我现在有个十分复杂的业务，在getter/setter加一点点业务代码，就能极大的简化业务场景的代码，那我为什么还要使用Lombok呢。</p>
+<p>  <strong>硬币都有正反两面，Lombok也有它优点和缺点，结合具体业务场景和项目实际情况，灵活运用才是王道。</strong></p>
 
                 
             </div>
@@ -572,7 +567,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiejiabin1.github.io/2022/01/14/1642151984/">http://xiejiabin1.github.io/2022/01/14/1642151984/</a>
+                    <a href="http://xiejiabin1.github.io/2022/01/20/1642656390/">http://xiejiabin1.github.io/2022/01/20/1642656390/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -610,12 +605,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/docker-for-windows/">
-                                    <span class="chip bg-color">docker for windows</span>
-                                </a>
-                            
-                                <a href="/tags/docker/">
-                                    <span class="chip bg-color">docker</span>
+                                <a href="/tags/Lombok/">
+                                    <span class="chip bg-color">Lombok</span>
                                 </a>
                             
                         </div>
@@ -786,7 +777,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
         repo: 'blogMessage',
         owner: 'xiejiabin1',
         admin: ["xiejiabin1"],
-        id: '2022-01-14T17-19-44',
+        id: '2022-01-20T13-26-30',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -818,12 +809,12 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/20/1642656390/">
+                <a href="/2022/01/20/1642656872/">
                     <div class="card-image">
                         
-                        <img src="/images/Lombok%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%80%BB%E7%BB%93/background.png" class="responsive-img" alt="Lombok的简介与使用以及总结">
+                        <img src="/images/Nginx%E8%B7%A8%E5%9F%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/background.png" class="responsive-img" alt="Nginx跨域的解决方法">
                         
-                        <span class="card-title">Lombok的简介与使用以及总结</span>
+                        <span class="card-title">Nginx跨域的解决方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -840,8 +831,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categorie/Lombok/" class="post-category">
-                                    Lombok
+                            <a href="/categorie/Nginx/" class="post-category">
+                                    Nginx
                                 </a>
                             
                             
@@ -851,8 +842,16 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Lombok/">
-                        <span class="chip bg-color">Lombok</span>
+                    <a href="/tags/nginx/">
+                        <span class="chip bg-color">nginx</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B7%A8%E5%9F%9F/">
+                        <span class="chip bg-color">跨域</span>
+                    </a>
+                    
+                    <a href="/tags/cookie/">
+                        <span class="chip bg-color">cookie</span>
                     </a>
                     
                 </div>
@@ -866,12 +865,12 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/14/1642136664/">
+                <a href="/2022/01/14/1642151984/">
                     <div class="card-image">
                         
-                        <img src="/images/MybatisPlus%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8AutoGenerator%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/background.png" class="responsive-img" alt="MybatisPlus代码生成器AutoGenerator的简介和使用">
+                        <img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.png" class="responsive-img" alt="win10中docker的安装与使用">
                         
-                        <span class="card-title">MybatisPlus代码生成器AutoGenerator的简介和使用</span>
+                        <span class="card-title">win10中docker的安装与使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -888,8 +887,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categorie/Mybatis/" class="post-category">
-                                    Mybatis
+                            <a href="/categorie/docker/" class="post-category">
+                                    docker
                                 </a>
                             
                             
@@ -899,16 +898,12 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/MybatisPlus/">
-                        <span class="chip bg-color">MybatisPlus</span>
+                    <a href="/tags/docker-for-windows/">
+                        <span class="chip bg-color">docker for windows</span>
                     </a>
                     
-                    <a href="/tags/Mybatis/">
-                        <span class="chip bg-color">Mybatis</span>
-                    </a>
-                    
-                    <a href="/tags/AutoGenerator/">
-                        <span class="chip bg-color">AutoGenerator</span>
+                    <a href="/tags/docker/">
+                        <span class="chip bg-color">docker</span>
                     </a>
                     
                 </div>

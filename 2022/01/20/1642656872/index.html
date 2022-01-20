@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="win10中docker的安装与使用, 先谢郭嘉&#39;blog">
+    <meta name="keywords" content="Nginx跨域的解决方法, 先谢郭嘉&#39;blog">
     <meta name="description" content="
-Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。————摘自百度">
+  博主开发了一个动静分离的博客，动静分离免不了静态资源和后台代码的部署，静态资源管理我用的是Nginx反向代理服务器。选择Nginx的原因是它内存消耗少、稳定性高、代码相对简单些。在项目编写的时候博主就遇到了浏览器的跨域问题，而本篇文章">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>win10中docker的安装与使用 | 先谢郭嘉&#39;blog</title>
+    <title>Nginx跨域的解决方法 | 先谢郭嘉&#39;blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +313,12 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/Nginx%E8%B7%A8%E5%9F%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/background.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">win10中docker的安装与使用</h1>
+                    <h1 class="description center-align post-title">Nginx跨域的解决方法</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,16 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/docker-for-windows/">
-                                <span class="chip bg-color">docker for windows</span>
+                            <a href="/tags/nginx/">
+                                <span class="chip bg-color">nginx</span>
                             </a>
                         
-                            <a href="/tags/docker/">
-                                <span class="chip bg-color">docker</span>
+                            <a href="/tags/%E8%B7%A8%E5%9F%9F/">
+                                <span class="chip bg-color">跨域</span>
+                            </a>
+                        
+                            <a href="/tags/cookie/">
+                                <span class="chip bg-color">cookie</span>
                             </a>
                         
                     </div>
@@ -450,8 +454,8 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categorie/docker/" class="post-category">
-                                docker
+                            <a href="/categorie/Nginx/" class="post-category">
+                                Nginx
                             </a>
                         
                     </div>
@@ -463,28 +467,28 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-14
+                    2022-01-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-14
+                    2022-01-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    781
+                    1.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    4 分
                 </div>
                 
 
@@ -508,44 +512,81 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows 机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。————摘自百度百科</p>
+<p>  博主开发了一个动静分离的博客，动静分离免不了静态资源和后台代码的部署，静态资源管理我用的是Nginx反向代理服务器。选择Nginx的原因是它内存消耗少、稳定性高、代码相对简单些。在项目编写的时候博主就遇到了浏览器的跨域问题，而本篇文章将讲述跨域问题的由来以及Nginx是如何解决跨域问题的</p>
 </blockquote>
-<h2 id="1、安装docker"><a href="#1、安装docker" class="headerlink" title="1、安装docker"></a>1、安装docker</h2><h3 id="安装条件"><a href="#安装条件" class="headerlink" title="安装条件"></a>安装条件</h3><p>  1、docker for windows只适用于win8以上的系统，win10是现在的主流，所以这里我将介绍的是win10系统中docker的安装和使用。</p>
-<p>  2、开启电脑的虚拟化，一般电脑都是默认开启的。可以在任务管理器-&gt;性能-&gt;CPU下查看虚拟化是否开启。</p>
-<p>  3、查看Hyper-v是否开启，启用Hyper-v可以在电脑中配置虚拟机。开启步骤：控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;最后重启电脑就可以了。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/1.png"></p>
-<h3 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h3><p>官网下载链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a>，选择稳定版下载。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/2.png"></p>
-<p>安装这里没什么好描述的，一直按确定就好了。</p>
-<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>进入cmd窗口查看docker是否安装成功。（dicker –version）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/3.png"></p>
-<h2 id="2、docker配置"><a href="#2、docker配置" class="headerlink" title="2、docker配置"></a>2、docker配置</h2><h3 id="注册登录账号"><a href="#注册登录账号" class="headerlink" title="注册登录账号"></a>注册登录账号</h3><p>下载安装完成后，双击图标进入，程序在运行的话，桌面右下角通知栏会有一个小鲸鱼的图标。这里需要注册登录一个账号，可以在官网注册一个账号。官网链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/4.png"></p>
-<h3 id="配置镜像加速"><a href="#配置镜像加速" class="headerlink" title="配置镜像加速"></a>配置镜像加速</h3><p>为什么要配置镜像加速，因为docker在国内的下载速度特别慢，所以我们通常会在配置一下镜像加速。一般用的是阿里云的免费加速。配置步骤：登录阿里云-&gt;控制台-&gt;搜索容器镜像服务（或者左上角产品与服务中找）,然后就是下面的图片示例：</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/5.png"></p>
-<p>复制加速器地址，将地址粘贴到registry-mirrors的json字符串中。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/6.png"></p>
-<h2 id="3、docker可视化界面Portainer"><a href="#3、docker可视化界面Portainer" class="headerlink" title="3、docker可视化界面Portainer"></a>3、docker可视化界面Portainer</h2><h3 id="下载prtainer镜像"><a href="#下载prtainer镜像" class="headerlink" title="下载prtainer镜像"></a>下载prtainer镜像</h3><p>先在docker中搜索查看Portainer镜像有哪些（docker search portainer）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/7.png"></p>
-<p><strong>选择第一个portainer/portainer下载（docker pull portainer/portainer）</strong></p>
-<h3 id="运行portainer镜像生成portainer容器"><a href="#运行portainer镜像生成portainer容器" class="headerlink" title="运行portainer镜像生成portainer容器"></a>运行portainer镜像生成portainer容器</h3><p> 运行portainer分为单机运行和集群运行，由于我们是用来开发和测试，这里选择单机运行。以下是命令行：</p>
-<pre class="line-numbers language-none"><code class="language-none">docker run -d -p 9000:9000 \
---restart=always \
--v /var/run/docker.sock:/var/run/docker.sock \
---name portainer \portainer/portainer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="输入localhost-9000登录portainer"><a href="#输入localhost-9000登录portainer" class="headerlink" title="输入localhost:9000登录portainer"></a>输入localhost:9000登录portainer</h3><p>1、首次登陆需要注册用户<br>2、单机版选择Local</p>
-<h2 id="4、Portainer的使用"><a href="#4、Portainer的使用" class="headerlink" title="4、Portainer的使用"></a>4、Portainer的使用</h2><p>输入账户和密码登录</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/8.png"></p>
-<p>登录成功后就可以看到自己的docker实例了</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/9.png"></p>
-<p>点击docker，你可以看到自己的镜像（images）和容器（containers）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/10.png"></p>
-<p>在容器中，不用命令就可以管理容器。不过对容器参数进行i修改后需要重启容器才能生效。</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/11.png"></p>
-<p>可以添加新镜像（需要配置加速，不然下载速度很慢，有时候就算加速了也比较慢，可以换个加速器）</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/12.png"></p>
-<p>还可以搜索常用镜像下载</p>
-<p><img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/13.png"></p>
+<hr>
+<h2 id="跨域问题产生的原因"><a href="#跨域问题产生的原因" class="headerlink" title="跨域问题产生的原因"></a>跨域问题产生的原因</h2><p>  跨域问题产生原因是浏览器同源策略的限制，何为同源策略，下表给出了与URL <a target="_blank" rel="noopener" href="http://xiejiabin.online/admin/login.html">http://xiejiabin.online/admin/login.html</a> 的源进行对比的示例：</p>
+<table>
+<thead>
+<tr>
+<th align="left">URL</th>
+<th align="center">结果</th>
+<th align="center">原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a target="_blank" rel="noopener" href="http://xiejiabin.online/login.html">http://xiejiabin.online/login.html</a></td>
+<td align="center">成功</td>
+<td align="center">路径不同，其他都相同</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://xiejiabin.online/admin/login.html">https://xiejiabin.online/admin/login.html</a></td>
+<td align="center">失败</td>
+<td align="center">协议不同</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="http://xiejiabin.online:8080/admin/login.html">http://xiejiabin.online:8080/admin/login.html</a></td>
+<td align="center">失败</td>
+<td align="center">端口不同</td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="http://xiejiabin.com/admin/login.html">http://xiejiabin.com/admin/login.html</a></td>
+<td align="center">失败</td>
+<td align="center">域名不同</td>
+</tr>
+</tbody></table>
+<p>  根据上表可以了解到同源策略是三同：协议相同、端口相同、域名相同。</p>
+<blockquote>
+<p>有了浏览器同源策略，才有了跨域限制，才使我们的信息受到保护。但是在实际开发中，我们需要突破这样的限制，因此才有了各种各样的跨域解决方法，这里就谈用Nginx的反向代理突破同源策略限制，解决跨域的问题。</p>
+</blockquote>
+<h2 id="同源的目的"><a href="#同源的目的" class="headerlink" title="同源的目的"></a>同源的目的</h2><p>  为了防止他人窃取信息，保护用户信息安全的。</p>
+<h2 id="Nginx解决跨域问题"><a href="#Nginx解决跨域问题" class="headerlink" title="Nginx解决跨域问题"></a>Nginx解决跨域问题</h2><blockquote>
+<p>反向代理服务器位于用户与目标服务器之间，但是对于用户而言，反向代理服务器就相当于目标服务器，即用户直接访问反向代理服务器就可以获得目标服务器的资源。同时，用户不需要知道目标服务器的地址，也无须在用户端作任何设定。反向代理服务器通常可用来作为Web加速，即使用反向代理作为Web服务器的前置机来降低网络和服务器的负载，提高访问效率.</p>
+</blockquote>
+<h3 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h3><p>  反向代理其实就是代理服务器来接受客户端的请求，然后将请求转发给内部网络上的服务器，最后将内部网络的服务器上得到的结果返回给客户端。此时，代理服务器对外就表现为一个服务器。Nginx就是一个很好的反向代理服务器。</p>
+<h3 id="Nginx配置"><a href="#Nginx配置" class="headerlink" title="Nginx配置"></a>Nginx配置</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">location <span class="token operator">/</span>blog<span class="token operator">/</span><span class="token punctuation">{</span>
+	add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Origin</span>' $http_origin<span class="token punctuation">;</span>
+	add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Credentials</span><span class="token char">' '</span><span class="token boolean">true</span>'<span class="token punctuation">;</span>
+	add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Methods</span><span class="token char">' '</span>GET<span class="token punctuation">,</span> POST<span class="token punctuation">,</span> OPTIONS'<span class="token punctuation">;</span>
+	add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Headers</span><span class="token char">' '</span>DNT<span class="token punctuation">,</span><span class="token class-name">Authorization</span><span class="token punctuation">,</span><span class="token class-name">Accept</span><span class="token punctuation">,</span><span class="token class-name">Origin</span><span class="token punctuation">,</span><span class="token class-name">Keep</span><span class="token operator">-</span><span class="token class-name">Alive</span><span class="token punctuation">,</span><span class="token class-name">User</span><span class="token operator">-</span><span class="token class-name">Agent</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Mx</span><span class="token operator">-</span><span class="token class-name">ReqToken</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Data</span><span class="token operator">-</span><span class="token class-name">Type</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Auth</span><span class="token operator">-</span><span class="token class-name">Token</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Requested</span><span class="token operator">-</span><span class="token class-name">With</span><span class="token punctuation">,</span><span class="token class-name">If</span><span class="token operator">-</span><span class="token class-name">Modified</span><span class="token operator">-</span><span class="token class-name">Since</span><span class="token punctuation">,</span><span class="token class-name">Cache</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token punctuation">,</span><span class="token class-name">Content</span><span class="token operator">-</span><span class="token class-name">Type</span><span class="token punctuation">,</span><span class="token class-name">Range</span>'<span class="token punctuation">;</span>
+
+	proxy_pass   http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">8080</span><span class="token operator">/</span>myblog<span class="token operator">/</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>  上面的代码就是我的Nginx的跨域配置，其中CORS配置一定要放在proxy_pass前面。</p>
+<ul>
+<li>Access-Control-Allow-Origin：（必须字段）它的值要么是请求时Origin的值，要么是 *，表示接受任意域名的请求。如果要发送Cookie，不能设置为 * ，必须指定明确的，与请求网页一致的域名。同时，Cookie依然遵守同源政策，只有用服务器域名设置的Cookie才会上传，其他域名的Cookie并不会上传。</li>
+<li>Access-Control-Allow-Credentials：（可选字段）它是一个bool值，表示是否允许发送Cookie。默认情况下，Cookie不包括在CORS请求之中。设为true，表示服务器明确许可，Cookie可以包含在请求中，一起发给服务器。CORS请求默认不发送Cookie和HTTP认证信息。如果要把Cookie发送到服务器，一方面要服务器同意，指定为true；另一方面，前端必须在AJAX请求中打开withCredentials属性。<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	<span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">"http://localhost:8080/selectUser"</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">"GET"</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">xhrFields</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+		<span class="token literal-property property">withCredentials</span><span class="token operator">:</span> <span class="token boolean">true</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token literal-property property">crossDomain</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+	<span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">data</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token comment">//处理返回结果</span>
+	<span class="token punctuation">}</span>
+ <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+（其中，crossDomain: true, xhrFields: {withCredentials: true}是必备的）</li>
+<li>Access-Control-Allow-Methods，OPTIONS一定要有的，另外一般也就GET和POST，如果你有其它的也可加进去。<h2 id="Cookie跨域问题"><a href="#Cookie跨域问题" class="headerlink" title="Cookie跨域问题"></a>Cookie跨域问题</h2>  前面的基本跨域问题已经解决了，但是到了后面进行登录操作的时候，cookie丢失了。经过一番面向百度编程，最终代码为：<pre class="line-numbers language-java" data-language="java"><code class="language-java">location <span class="token operator">/</span>blog<span class="token operator">/</span><span class="token punctuation">{</span>
+    add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Origin</span>' $http_origin<span class="token punctuation">;</span>
+    add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Credentials</span><span class="token char">' '</span><span class="token boolean">true</span>'<span class="token punctuation">;</span>
+    add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Methods</span><span class="token char">' '</span>GET<span class="token punctuation">,</span> POST<span class="token punctuation">,</span> OPTIONS'<span class="token punctuation">;</span>
+    add_header '<span class="token class-name">Access</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token operator">-</span><span class="token class-name">Allow</span><span class="token operator">-</span><span class="token class-name">Headers</span><span class="token char">' '</span>DNT<span class="token punctuation">,</span><span class="token class-name">Authorization</span><span class="token punctuation">,</span><span class="token class-name">Accept</span><span class="token punctuation">,</span><span class="token class-name">Origin</span><span class="token punctuation">,</span><span class="token class-name">Keep</span><span class="token operator">-</span><span class="token class-name">Alive</span><span class="token punctuation">,</span><span class="token class-name">User</span><span class="token operator">-</span><span class="token class-name">Agent</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Mx</span><span class="token operator">-</span><span class="token class-name">ReqToken</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Data</span><span class="token operator">-</span><span class="token class-name">Type</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Auth</span><span class="token operator">-</span><span class="token class-name">Token</span><span class="token punctuation">,</span><span class="token class-name">X</span><span class="token operator">-</span><span class="token class-name">Requested</span><span class="token operator">-</span><span class="token class-name">With</span><span class="token punctuation">,</span><span class="token class-name">If</span><span class="token operator">-</span><span class="token class-name">Modified</span><span class="token operator">-</span><span class="token class-name">Since</span><span class="token punctuation">,</span><span class="token class-name">Cache</span><span class="token operator">-</span><span class="token class-name">Control</span><span class="token punctuation">,</span><span class="token class-name">Content</span><span class="token operator">-</span><span class="token class-name">Type</span><span class="token punctuation">,</span><span class="token class-name">Range</span>'<span class="token punctuation">;</span>
+	
+    proxy_pass   http<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>localhost<span class="token operator">:</span><span class="token number">8080</span><span class="token operator">/</span>myblog<span class="token operator">/</span><span class="token punctuation">;</span>
+	proxy_cookie_path  <span class="token operator">/</span>myblog<span class="token operator">/</span> <span class="token operator">/</span>blog<span class="token operator">/</span><span class="token punctuation">;</span> # myblog 是我的项目名
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
 
                 
             </div>
@@ -572,7 +613,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiejiabin1.github.io/2022/01/14/1642151984/">http://xiejiabin1.github.io/2022/01/14/1642151984/</a>
+                    <a href="http://xiejiabin1.github.io/2022/01/20/1642656872/">http://xiejiabin1.github.io/2022/01/20/1642656872/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -610,12 +651,16 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/docker-for-windows/">
-                                    <span class="chip bg-color">docker for windows</span>
+                                <a href="/tags/nginx/">
+                                    <span class="chip bg-color">nginx</span>
                                 </a>
                             
-                                <a href="/tags/docker/">
-                                    <span class="chip bg-color">docker</span>
+                                <a href="/tags/%E8%B7%A8%E5%9F%9F/">
+                                    <span class="chip bg-color">跨域</span>
+                                </a>
+                            
+                                <a href="/tags/cookie/">
+                                    <span class="chip bg-color">cookie</span>
                                 </a>
                             
                         </div>
@@ -786,7 +831,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
         repo: 'blogMessage',
         owner: 'xiejiabin1',
         admin: ["xiejiabin1"],
-        id: '2022-01-14T17-19-44',
+        id: '2022-01-20T13-34-31',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -814,9 +859,67 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/01/20/1642656872/">
+                    <div class="card-image">
+                        
+                        <img src="/images/Nginx%E8%B7%A8%E5%9F%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/background.png" class="responsive-img" alt="Nginx跨域的解决方法">
+                        
+                        <span class="card-title">Nginx跨域的解决方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categorie/Nginx/" class="post-category">
+                                    Nginx
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/nginx/">
+                        <span class="chip bg-color">nginx</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B7%A8%E5%9F%9F/">
+                        <span class="chip bg-color">跨域</span>
+                    </a>
+                    
+                    <a href="/tags/cookie/">
+                        <span class="chip bg-color">cookie</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/01/20/1642656390/">
                     <div class="card-image">
@@ -833,9 +936,9 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -853,62 +956,6 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                     
                     <a href="/tags/Lombok/">
                         <span class="chip bg-color">Lombok</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/14/1642136664/">
-                    <div class="card-image">
-                        
-                        <img src="/images/MybatisPlus%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8AutoGenerator%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/background.png" class="responsive-img" alt="MybatisPlus代码生成器AutoGenerator的简介和使用">
-                        
-                        <span class="card-title">MybatisPlus代码生成器AutoGenerator的简介和使用</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categorie/Mybatis/" class="post-category">
-                                    Mybatis
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/MybatisPlus/">
-                        <span class="chip bg-color">MybatisPlus</span>
-                    </a>
-                    
-                    <a href="/tags/Mybatis/">
-                        <span class="chip bg-color">Mybatis</span>
-                    </a>
-                    
-                    <a href="/tags/AutoGenerator/">
-                        <span class="chip bg-color">AutoGenerator</span>
                     </a>
                     
                 </div>
