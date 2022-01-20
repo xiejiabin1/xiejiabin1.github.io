@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Lombok的简介与使用以及总结, 先谢郭嘉&#39;blog">
-    <meta name="description" content="
-  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写gett">
+    <meta name="keywords" content="Java面试题整理（Java容器）, 先谢郭嘉&#39;blog">
+    <meta name="description" content="二、java容器18、java 容器都有哪些？常用容器的图录：
+
+19、Collection 和 Collections 有什么区别？
+java.util.Collection 是一个集合接口（集合类的一个顶级接口）。它提供了对集合对象进行">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Lombok的简介与使用以及总结 | 先谢郭嘉&#39;blog</title>
+    <title>Java面试题整理（Java容器） | 先谢郭嘉&#39;blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +315,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/Lombok%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%80%BB%E7%BB%93/background.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/Java%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/background.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Lombok的简介与使用以及总结</h1>
+                    <h1 class="description center-align post-title">Java面试题整理（Java容器）</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +436,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Lombok/">
-                                <span class="chip bg-color">Lombok</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                <span class="chip bg-color">面试</span>
                             </a>
                         
                     </div>
@@ -446,8 +452,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categorie/Lombok/" class="post-category">
-                                Lombok
+                            <a href="/categorie/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -459,28 +465,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-20
+                    2022-01-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-20
+                    2022-01-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    955
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    5 分
                 </div>
                 
 
@@ -503,44 +509,71 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写getter/setter方法了。这篇文章将讲述lombok的使用和一些自己的总结。</p>
-</blockquote>
-<hr>
-<h2 id="一、Lombok简介"><a href="#一、Lombok简介" class="headerlink" title="一、Lombok简介"></a>一、Lombok简介</h2><p>  Lombok 是一种 Java 实用工具，可用来帮助开发人员消除 Java 的冗长，尤其是对于简单的 Java 对象（POJO）。它通过注释实现这一目的。通过在开发环境中实现  Lombok，我们可以节省构建诸如 hashCode() 和 equals() 这样的方法以及以往用来分类各种 accessor 和 mutator 的大量时间。</p>
-<p>  Lombo之所以能自动生成代码，最终够达到在源码中没有getter和setter方法，但是在编译生成的字节码文件中有getter和setter方法的效果，是因为它在注解解析上做了“手脚”。具体是如何实现的，这个就需要阅读源码了。博主还没有阅读过，这里只是简单的讲下它的使用说明，以及自己的一些经验总结。</p>
-<p><strong>GitHub链接：<a target="_blank" rel="noopener" href="https://github.com/rzwitserloot/lombok">https://github.com/rzwitserloot/lombok</a></strong></p>
-<h2 id="二、Lombok使用"><a href="#二、Lombok使用" class="headerlink" title="二、Lombok使用"></a>二、Lombok使用</h2><h3 id="1、加入maven依赖"><a href="#1、加入maven依赖" class="headerlink" title="1、加入maven依赖"></a>1、加入maven依赖</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">&gt;</span></span>
-    <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
-    <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
-    <span class="token generics"><span class="token punctuation">&lt;</span>version<span class="token punctuation">&gt;</span></span><span class="token number">1.18</span><span class="token number">.12</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2、常用注解介绍"><a href="#2、常用注解介绍" class="headerlink" title="2、常用注解介绍"></a>2、常用注解介绍</h3><h4 id="Date"><a href="#Date" class="headerlink" title="@Date"></a>@Date</h4><p>@Data注解在类上，会为类的所有属性自动生成setter/getter、equals、canEqual、hashCode、toString方法，如果是final属性，则不会为该属性生成setter方法。</p>
-<hr>
-<h4 id="Getter-Setter"><a href="#Getter-Setter" class="headerlink" title="@Getter/@Setter"></a>@Getter/@Setter</h4><p>使用@Getter/@Setter注解，此注解在属性上，可以为相应的属性自动生成Getter/Setter方法。</p>
-<hr>
-<h4 id="NonNull"><a href="#NonNull" class="headerlink" title="@NonNull"></a>@NonNull</h4><p>该注解用在属性或构造器上，Lombok会生成一个非空的声明，可用于校验参数，能帮助避免空指针。</p>
-<hr>
-<h4 id="EqualsAndHashCode"><a href="#EqualsAndHashCode" class="headerlink" title="@EqualsAndHashCode"></a>@EqualsAndHashCode</h4><p>自动生成 equals(Object other) 和 hashcode() 方法。说到这个方法，就要说说equals和hashcode的关系了。</p>
-<p>由于equals比较的太全面比较复杂，所以每当需要对比的时候，<strong>首先用hashCode()去对比</strong>，如果hashCode()不一样，则表示这两个对象肯定不相等（也就是不必再用equal()去再对比了）,如果hashCode()相同，此时再对比他们的equal()，如果equal()也相同，则表示这两个对象是真的相同了，这样既能大大提高了效率也保证了对比的绝对正确性。</p>
-<hr>
-<h4 id="NoArgsConstructor-RequiredArgsConstructor-和-AllArgsConstructor"><a href="#NoArgsConstructor-RequiredArgsConstructor-和-AllArgsConstructor" class="headerlink" title="@NoArgsConstructor, @RequiredArgsConstructor 和 @AllArgsConstructor"></a>@NoArgsConstructor, @RequiredArgsConstructor 和 @AllArgsConstructor</h4><p>分别对应无参构造器、部分参数构造器、全参构造器。Lombok没法实现多种参数构造器的重载。</p>
-<hr>
-<h4 id="Slf4j"><a href="#Slf4j" class="headerlink" title="@Slf4j"></a>@Slf4j</h4><p>注解在类，生成log变量，严格意义来说是常量，要打日志就可以直接打，不用再手动 new log 静态常量了。</p>
-<hr>
-<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p><strong>优点：</strong></p>
-<ul>
-<li>让代码变得简洁</li>
-<li>通过注解的形式消除 Java 的冗长且编译时自动生成，提高了一定的开发效率。</li>
+                <h2 id="二、java容器"><a href="#二、java容器" class="headerlink" title="二、java容器"></a>二、java容器</h2><h3 id="18、java-容器都有哪些？"><a href="#18、java-容器都有哪些？" class="headerlink" title="18、java 容器都有哪些？"></a>18、java 容器都有哪些？</h3><p>常用容器的图录：</p>
+<p><img src="/images/Java%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%E6%95%B4%E7%90%86/1.png"></p>
+<h3 id="19、Collection-和-Collections-有什么区别？"><a href="#19、Collection-和-Collections-有什么区别？" class="headerlink" title="19、Collection 和 Collections 有什么区别？"></a>19、Collection 和 Collections 有什么区别？</h3><ul>
+<li>java.util.Collection 是一个集合接口（集合类的一个顶级接口）。它提供了对集合对象进行基本操作的通用接口方法。Collection接口在Java 类库中有很多具体的实现。Collection接口的意义是为各种具体的集合提供了最大化的统一操作方式，其直接继承接口有List与Set。</li>
+<li>Collections则是集合类的一个工具类/帮助类，其中提供了一系列静态方法，用于对集合中元素进行排序、搜索以及线程安全等各种操作。</li>
 </ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li>不支持多种参数构造器的重载</li>
-<li>降低了源代码的可读性和完整性</li>
-<li>需要强制下载Lombok插件</li>
+<h3 id="20、List、Set、Map-之间的区别是什么？"><a href="#20、List、Set、Map-之间的区别是什么？" class="headerlink" title="20、List、Set、Map 之间的区别是什么？"></a>20、List、Set、Map 之间的区别是什么？</h3><p><img src="/images/Java%E9%9D%A2%E8%AF%95%E9%A2%98%E5%8F%8A%E7%AD%94%E6%A1%88%E6%95%B4%E7%90%86/2.png"></p>
+<h3 id="21、HashMap-和-Hashtable-有什么区别？"><a href="#21、HashMap-和-Hashtable-有什么区别？" class="headerlink" title="21、HashMap 和 Hashtable 有什么区别？"></a>21、HashMap 和 Hashtable 有什么区别？</h3><ul>
+<li>hashMap去掉了HashTable 的contains方法，但是加上了containsValue（）和containsKey（）方法。</li>
+<li>hashTable同步的，而HashMap是非同步的，效率上逼hashTable要高。</li>
+<li>hashMap允许空键值，而hashTable不允许。</li>
 </ul>
-<p>  对于我来说Lombok是一个好用的工具，在一般的项目开发中都可以用得上，但是在逻辑业务比较复杂的情况下，及并不推荐了，我们结合具体业务场景和项目实际情况。比如说，我现在有个十分复杂的业务，在getter/setter加一点点业务代码，就能极大的简化业务场景的代码，那我为什么还要使用Lombok呢。</p>
-<p>  <strong>硬币都有正反两面，Lombok也有它优点和缺点，结合具体业务场景和项目实际情况，灵活运用才是王道。</strong></p>
+<h3 id="22、如何决定使用-HashMap-还是-TreeMap？"><a href="#22、如何决定使用-HashMap-还是-TreeMap？" class="headerlink" title="22、如何决定使用 HashMap 还是 TreeMap？"></a>22、如何决定使用 HashMap 还是 TreeMap？</h3><p>对于在Map中插入、删除和定位元素这类操作，HashMap是最好的选择。然而，假如你需要对一个有序的key集合进行遍历，TreeMap是更好的选择。基于你的collection的大小，也许向HashMap中添加元素会更快，将map换为TreeMap进行有序key的遍历。</p>
+<h3 id="23、说一下-HashMap-的实现原理？"><a href="#23、说一下-HashMap-的实现原理？" class="headerlink" title="23、说一下 HashMap 的实现原理？"></a>23、说一下 HashMap 的实现原理？</h3><ul>
+<li>HashMap概述：HashMap是基于哈希表的Map接口的非同步实现。此实现提供所有可选的映射操作，并允许使用null值和null键。此类不保证映射的顺序，特别是它不保证该顺序恒久不变。 </li>
+<li>HashMap的数据结构：在java编程语言中，最基本的结构就是两种，一个是数组，另外一个是模拟指针（引用），所有的数据结构都可以用这两个基本结构来构造的，HashMap也不例外。HashMap实际上是一个“链表散列”的数据结构，即数组和链表的结合体。</li>
+<li>当我们往Hashmap中put元素时,首先根据key的hashcode重新计算hash值,根绝hash值得到这个元素在数组中的位置(下标),如果该数组在该位置上已经存放了其他元素,那么在这个位置上的元素将以链表的形式存放,新加入的放在链头,最先加入的放入链尾.如果数组中该位置没有元素,就直接将该元素放到数组的该位置上。</li>
+<li>需要注意Jdk 1.8中对HashMap的实现做了优化,当链表中的节点数据超过八个之后,该链表会转为红黑树来提高查询效率,从原来的O(n)到O(logn)</li>
+</ul>
+<h3 id="24、说一下-HashSet-的实现原理？"><a href="#24、说一下-HashSet-的实现原理？" class="headerlink" title="24、说一下 HashSet 的实现原理？"></a>24、说一下 HashSet 的实现原理？</h3><ul>
+<li>HashSet底层由HashMap实现</li>
+<li>HashSet的值存放于HashMap的key上</li>
+<li>HashMap的value统一为PRESENT</li>
+</ul>
+<h3 id="25、ArrayList-和-LinkedList-的区别是什么？"><a href="#25、ArrayList-和-LinkedList-的区别是什么？" class="headerlink" title="25、ArrayList 和 LinkedList 的区别是什么？"></a>25、ArrayList 和 LinkedList 的区别是什么？</h3><ul>
+<li>ArrayList是实现了基于动态数组的数据结构，LinkedList基于链表的数据结构。 （LinkedList是双向链表，有next也有previous）</li>
+<li>对于随机访问get和set，ArrayList觉得优于LinkedList，因为LinkedList要移动指针。 </li>
+<li>对于新增和删除操作add和remove，LinedList比较占优势，因为ArrayList要移动数据。</li>
+<li>ArrayList的内部实现是基于基础的对象数组的，因此，它使用get方法访问列表中的任意一个元素时，它的速度要比LinkedList快。LinkedList中的get方法是按照顺序从列表的一端开始检查，直到另外一端。</li>
+</ul>
+<h3 id="26、如何实现数组和-List-之间的转换？"><a href="#26、如何实现数组和-List-之间的转换？" class="headerlink" title="26、如何实现数组和 List 之间的转换？"></a>26、如何实现数组和 List 之间的转换？</h3><ul>
+<li>List转换成为数组：调用ArrayList的toArray方法。</li>
+<li>数组转换成为List：调用Arrays的asList方法。</li>
+</ul>
+<h3 id="27、ArrayList-和-Vector-的区别是什么？"><a href="#27、ArrayList-和-Vector-的区别是什么？" class="headerlink" title="27、ArrayList 和 Vector 的区别是什么？"></a>27、ArrayList 和 Vector 的区别是什么？</h3><ul>
+<li>Vector是同步的，而ArrayList不是。然而，如果你寻求在迭代的时候对列表进行改变，你应该使用CopyOnWriteArrayList。 </li>
+<li>ArrayList比Vector快，它因为有同步，不会过载。 </li>
+<li>ArrayList更加通用，因为我们可以使用Collections工具类轻易地获取同步列表和只读列表。</li>
+</ul>
+<h3 id="28、Array-和-ArrayList-有何区别？"><a href="#28、Array-和-ArrayList-有何区别？" class="headerlink" title="28、Array 和 ArrayList 有何区别？"></a>28、Array 和 ArrayList 有何区别？</h3><ul>
+<li>Array可以容纳基本类型和对象，而ArrayList只能容纳对象。 </li>
+<li>Array是指定大小的，而ArrayList大小是固定的。 </li>
+<li>Array没有提供ArrayList那么多功能，比如addAll、removeAll和iterator等。</li>
+</ul>
+<h3 id="29、在-Queue-中-poll-和-remove-有什么区别？"><a href="#29、在-Queue-中-poll-和-remove-有什么区别？" class="headerlink" title="29、在 Queue 中 poll()和 remove()有什么区别？"></a>29、在 Queue 中 poll()和 remove()有什么区别？</h3><p>poll() 和 remove() 都是从队列中取出一个元素，但是 poll() 在获取元素失败的时候会返回空，但是 remove() 失败的时候会抛出异常。</p>
+<h3 id="30、哪些集合类是线程安全的？"><a href="#30、哪些集合类是线程安全的？" class="headerlink" title="30、哪些集合类是线程安全的？"></a>30、哪些集合类是线程安全的？</h3><ul>
+<li>vector：就比arraylist多了个同步化机制（线程安全），因为效率较低，现在已经不太建议使用。在web应用中，特别是前台页面，往往效率（页面响应速度）是优先考虑的。</li>
+<li>statck：堆栈类，先进后出。</li>
+<li>hashtable：就比hashmap多了个线程安全。</li>
+<li>enumeration：枚举，相当于迭代器。</li>
+</ul>
+<h3 id="31、迭代器-Iterator-是什么？"><a href="#31、迭代器-Iterator-是什么？" class="headerlink" title="31、迭代器 Iterator 是什么？"></a>31、迭代器 Iterator 是什么？</h3><p>迭代器是一种设计模式，它是一个对象，它可以遍历并选择序列中的对象，而开发人员不需要了解该序列的底层结构。迭代器通常被称为“轻量级”对象，因为创建它的代价小。</p>
+<h3 id="32、Iterator-怎么使用？有什么特点？"><a href="#32、Iterator-怎么使用？有什么特点？" class="headerlink" title="32、Iterator 怎么使用？有什么特点？"></a>32、Iterator 怎么使用？有什么特点？</h3><p>Java中的Iterator功能比较简单，并且只能单向移动：</p>
+<ul>
+<li>使用方法iterator()要求容器返回一个Iterator。第一次调用Iterator的next()方法时，它返回序列的第一个元素。注意：iterator()方法是java.lang.Iterable接口,被Collection继承。</li>
+<li>使用next()获得序列中的下一个元素。</li>
+<li>使用hasNext()检查序列中是否还有元素。</li>
+<li>使用remove()将迭代器新返回的元素删除。</li>
+</ul>
+<p>Iterator是Java迭代器最简单的实现，为List设计的ListIterator具有更多的功能，它可以从两个方向遍历List，也可以从List中插入和删除元素。</p>
+<h3 id="33、Iterator-和-ListIterator-有什么区别？"><a href="#33、Iterator-和-ListIterator-有什么区别？" class="headerlink" title="33、Iterator 和 ListIterator 有什么区别？"></a>33、Iterator 和 ListIterator 有什么区别？</h3><ul>
+<li>Iterator可用来遍历Set和List集合，但是ListIterator只能用来遍历List。 </li>
+<li>Iterator对集合只能是前向遍历，ListIterator既可以前向也可以后向。 </li>
+<li>ListIterator实现了Iterator接口，并包含其他的功能，比如：增加元素，替换元素，获取前一个和后一个元素的索引等。</li>
+</ul>
 
                 
             </div>
@@ -567,7 +600,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiejiabin1.github.io/2022/01/20/1642656390/">http://xiejiabin1.github.io/2022/01/20/1642656390/</a>
+                    <a href="http://xiejiabin1.github.io/2022/01/21/1642747213/">http://xiejiabin1.github.io/2022/01/21/1642747213/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -605,8 +638,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Lombok/">
-                                    <span class="chip bg-color">Lombok</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                    <span class="chip bg-color">面试</span>
                                 </a>
                             
                         </div>
@@ -777,7 +814,7 @@
         repo: 'blogMessage',
         owner: 'xiejiabin1',
         admin: ["xiejiabin1"],
-        id: '2022-01-20T13-26-30',
+        id: '2022-01-21T14-40-13',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -805,16 +842,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/01/20/1642656872/">
+                <a href="/2022/01/21/1642747213/">
                     <div class="card-image">
                         
-                        <img src="/images/Nginx%E8%B7%A8%E5%9F%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/background.png" class="responsive-img" alt="Nginx跨域的解决方法">
+                        <img src="/images/Java%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/background.png" class="responsive-img" alt="Java面试题整理（Java容器）">
                         
-                        <span class="card-title">Nginx跨域的解决方法</span>
+                        <span class="card-title">Java面试题整理（Java容器）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -824,34 +862,31 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categorie/Nginx/" class="post-category">
-                                    Nginx
+                            <a href="/categorie/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/nginx/">
-                        <span class="chip bg-color">nginx</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
-                    <a href="/tags/%E8%B7%A8%E5%9F%9F/">
-                        <span class="chip bg-color">跨域</span>
-                    </a>
-                    
-                    <a href="/tags/cookie/">
-                        <span class="chip bg-color">cookie</span>
+                    <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                        <span class="chip bg-color">面试</span>
                     </a>
                     
                 </div>
@@ -865,12 +900,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/14/1642151984/">
+                <a href="/2022/01/21/1642745607/">
                     <div class="card-image">
                         
-                        <img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.png" class="responsive-img" alt="win10中docker的安装与使用">
+                        <img src="/images/Java%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/background.png" class="responsive-img" alt="Java面试题整理（Java基础）">
                         
-                        <span class="card-title">win10中docker的安装与使用</span>
+                        <span class="card-title">Java面试题整理（Java基础）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -881,14 +916,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-21
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categorie/docker/" class="post-category">
-                                    docker
+                            <a href="/categorie/Java/" class="post-category">
+                                    Java
                                 </a>
                             
                             
@@ -898,12 +933,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/docker-for-windows/">
-                        <span class="chip bg-color">docker for windows</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
-                    <a href="/tags/docker/">
-                        <span class="chip bg-color">docker</span>
+                    <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                        <span class="chip bg-color">面试</span>
                     </a>
                     
                 </div>

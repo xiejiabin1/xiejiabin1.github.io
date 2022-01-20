@@ -4,9 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Lombok的简介与使用以及总结, 先谢郭嘉&#39;blog">
-    <meta name="description" content="
-  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写gett">
+    <meta name="keywords" content="Java面试题整理（Java基础）, 先谢郭嘉&#39;blog">
+    <meta name="description" content="一、java基础1、JDK 和 JRE 有什么区别？
+JDK：Java Development Kit 的简称，java 开发工具包，提供了 java 的开发环境和运行环境。
+JRE：Java Runtime Environment 的简称">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +19,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Lombok的简介与使用以及总结 | 先谢郭嘉&#39;blog</title>
+    <title>Java面试题整理（Java基础） | 先谢郭嘉&#39;blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +314,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/images/Lombok%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%80%BB%E7%BB%93/background.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/Java%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/background.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Lombok的简介与使用以及总结</h1>
+                    <h1 class="description center-align post-title">Java面试题整理（Java基础）</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +435,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Lombok/">
-                                <span class="chip bg-color">Lombok</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                <span class="chip bg-color">面试</span>
                             </a>
                         
                     </div>
@@ -446,8 +451,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categorie/Lombok/" class="post-category">
-                                Lombok
+                            <a href="/categorie/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -459,28 +464,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-20
+                    2022-01-21
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-20
+                    2022-01-21
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    955
+                    1.8k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    7 分
                 </div>
                 
 
@@ -503,44 +508,147 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写getter/setter方法了。这篇文章将讲述lombok的使用和一些自己的总结。</p>
-</blockquote>
-<hr>
-<h2 id="一、Lombok简介"><a href="#一、Lombok简介" class="headerlink" title="一、Lombok简介"></a>一、Lombok简介</h2><p>  Lombok 是一种 Java 实用工具，可用来帮助开发人员消除 Java 的冗长，尤其是对于简单的 Java 对象（POJO）。它通过注释实现这一目的。通过在开发环境中实现  Lombok，我们可以节省构建诸如 hashCode() 和 equals() 这样的方法以及以往用来分类各种 accessor 和 mutator 的大量时间。</p>
-<p>  Lombo之所以能自动生成代码，最终够达到在源码中没有getter和setter方法，但是在编译生成的字节码文件中有getter和setter方法的效果，是因为它在注解解析上做了“手脚”。具体是如何实现的，这个就需要阅读源码了。博主还没有阅读过，这里只是简单的讲下它的使用说明，以及自己的一些经验总结。</p>
-<p><strong>GitHub链接：<a target="_blank" rel="noopener" href="https://github.com/rzwitserloot/lombok">https://github.com/rzwitserloot/lombok</a></strong></p>
-<h2 id="二、Lombok使用"><a href="#二、Lombok使用" class="headerlink" title="二、Lombok使用"></a>二、Lombok使用</h2><h3 id="1、加入maven依赖"><a href="#1、加入maven依赖" class="headerlink" title="1、加入maven依赖"></a>1、加入maven依赖</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token generics"><span class="token punctuation">&lt;</span>dependency<span class="token punctuation">&gt;</span></span>
-    <span class="token generics"><span class="token punctuation">&lt;</span>groupId<span class="token punctuation">&gt;</span></span>org<span class="token punctuation">.</span>projectlombok<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
-    <span class="token generics"><span class="token punctuation">&lt;</span>artifactId<span class="token punctuation">&gt;</span></span>lombok<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
-    <span class="token generics"><span class="token punctuation">&lt;</span>version<span class="token punctuation">&gt;</span></span><span class="token number">1.18</span><span class="token number">.12</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2、常用注解介绍"><a href="#2、常用注解介绍" class="headerlink" title="2、常用注解介绍"></a>2、常用注解介绍</h3><h4 id="Date"><a href="#Date" class="headerlink" title="@Date"></a>@Date</h4><p>@Data注解在类上，会为类的所有属性自动生成setter/getter、equals、canEqual、hashCode、toString方法，如果是final属性，则不会为该属性生成setter方法。</p>
-<hr>
-<h4 id="Getter-Setter"><a href="#Getter-Setter" class="headerlink" title="@Getter/@Setter"></a>@Getter/@Setter</h4><p>使用@Getter/@Setter注解，此注解在属性上，可以为相应的属性自动生成Getter/Setter方法。</p>
-<hr>
-<h4 id="NonNull"><a href="#NonNull" class="headerlink" title="@NonNull"></a>@NonNull</h4><p>该注解用在属性或构造器上，Lombok会生成一个非空的声明，可用于校验参数，能帮助避免空指针。</p>
-<hr>
-<h4 id="EqualsAndHashCode"><a href="#EqualsAndHashCode" class="headerlink" title="@EqualsAndHashCode"></a>@EqualsAndHashCode</h4><p>自动生成 equals(Object other) 和 hashcode() 方法。说到这个方法，就要说说equals和hashcode的关系了。</p>
-<p>由于equals比较的太全面比较复杂，所以每当需要对比的时候，<strong>首先用hashCode()去对比</strong>，如果hashCode()不一样，则表示这两个对象肯定不相等（也就是不必再用equal()去再对比了）,如果hashCode()相同，此时再对比他们的equal()，如果equal()也相同，则表示这两个对象是真的相同了，这样既能大大提高了效率也保证了对比的绝对正确性。</p>
-<hr>
-<h4 id="NoArgsConstructor-RequiredArgsConstructor-和-AllArgsConstructor"><a href="#NoArgsConstructor-RequiredArgsConstructor-和-AllArgsConstructor" class="headerlink" title="@NoArgsConstructor, @RequiredArgsConstructor 和 @AllArgsConstructor"></a>@NoArgsConstructor, @RequiredArgsConstructor 和 @AllArgsConstructor</h4><p>分别对应无参构造器、部分参数构造器、全参构造器。Lombok没法实现多种参数构造器的重载。</p>
-<hr>
-<h4 id="Slf4j"><a href="#Slf4j" class="headerlink" title="@Slf4j"></a>@Slf4j</h4><p>注解在类，生成log变量，严格意义来说是常量，要打日志就可以直接打，不用再手动 new log 静态常量了。</p>
-<hr>
-<h2 id="三、总结"><a href="#三、总结" class="headerlink" title="三、总结"></a>三、总结</h2><p><strong>优点：</strong></p>
-<ul>
-<li>让代码变得简洁</li>
-<li>通过注解的形式消除 Java 的冗长且编译时自动生成，提高了一定的开发效率。</li>
+                <h2 id="一、java基础"><a href="#一、java基础" class="headerlink" title="一、java基础"></a>一、java基础</h2><h3 id="1、JDK-和-JRE-有什么区别？"><a href="#1、JDK-和-JRE-有什么区别？" class="headerlink" title="1、JDK 和 JRE 有什么区别？"></a>1、JDK 和 JRE 有什么区别？</h3><ul>
+<li>JDK：Java Development Kit 的简称，java 开发工具包，提供了 java 的开发环境和运行环境。</li>
+<li>JRE：Java Runtime Environment 的简称，java 运行环境，为 java 的运行提供了所需环境。</li>
 </ul>
-<p><strong>缺点：</strong></p>
-<ul>
-<li>不支持多种参数构造器的重载</li>
-<li>降低了源代码的可读性和完整性</li>
-<li>需要强制下载Lombok插件</li>
+<p>具体来说 JDK 其实包含了 JRE，同时还包含了编译 java 源码的编译器 javac，还包含了很多 java 程序调试和分析的工具。</p>
+<p>如果你需要运行 java 程序，只需安装 JRE 就可以了，如果你需要编写 java 程序，需要安装 JDK。</p>
+<h3 id="2、-和-equals-的区别是什么？"><a href="#2、-和-equals-的区别是什么？" class="headerlink" title="2、== 和 equals 的区别是什么？"></a>2、== 和 equals 的区别是什么？</h3><p>equals 本质上就是 ==，只不过 String 和 Integer 等重写了 equals 方法，把它变成了值比较。</p>
+<p>首先来看默认情况下 equals 比较一个有相同值的对象，代码如下：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setName</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token class-name">Cat</span> c1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">"谢"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">Cat</span> c2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Cat</span><span class="token punctuation">(</span><span class="token string">"谢"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>c1<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>c2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>输出结果出乎我们的意料，竟然是 false？这是怎么回事，看了 equals 源码就知道了，源码如下：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">Object</span> obj<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>原来 equals 本质上就是 ==。那问题来了，两个相同值的 String 对象，为什么返回的是 true？代码如下：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">String</span> s1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"老王"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> s2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"老王"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>s1<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>s2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>同样的，当我们进入 String 的 equals 方法，找到了答案，代码如下：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span><span class="token class-name">Object</span> anObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> anObject<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>anObject <span class="token keyword">instanceof</span> <span class="token class-name">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">String</span> anotherString <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">)</span>anObject<span class="token punctuation">;</span>
+        <span class="token keyword">int</span> n <span class="token operator">=</span> value<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> anotherString<span class="token punctuation">.</span>value<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">char</span> v1<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> value<span class="token punctuation">;</span>
+            <span class="token keyword">char</span> v2<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> anotherString<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
+            <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token keyword">while</span> <span class="token punctuation">(</span>n<span class="token operator">--</span> <span class="token operator">!=</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>v1<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> v2<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+                i<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>原来是 String 重写了 Object 的 equals 方法，把引用比较改成了值比较。</p>
+<p><strong>总结</strong>：== 对于基本类型来说是值比较，对于引用类型来说是比较的是引用；而 equals 默认情况下是引用比较，只是很多类重写了 equals 方法，比如 String、Integer 等把它变成了值比较，所以一般情况下 equals 比较的是值是否相等。</p>
+<h3 id="3、两个对象的-hashCode-相同，则-equals-也一定为-true，对吗？"><a href="#3、两个对象的-hashCode-相同，则-equals-也一定为-true，对吗？" class="headerlink" title="3、两个对象的 hashCode()相同，则 equals()也一定为 true，对吗？"></a>3、两个对象的 hashCode()相同，则 equals()也一定为 true，对吗？</h3><p>不对，两个对象的 hashCode()相同，equals()不一定 true。代码示例：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">String</span> str1 <span class="token operator">=</span> <span class="token string">"通话"</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> str2 <span class="token operator">=</span> <span class="token string">"重地"</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"str1：%d | str2：%d"</span><span class="token punctuation">,</span> str1<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>str2<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>str1<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>str2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>执行的结果：</p>
+<p>str1：1179395 | str2：1179395</p>
+<p>false</p>
+<p><strong>代码解读</strong>：很显然“通话”和“重地”的 hashCode() 相同，然而 equals() 则为 false，因为在散列表中，hashCode()相等即两个键值对的哈希值相等，然而哈希值相等，并不一定能得出键值对相等。</p>
+<h3 id="4、final-在-java-中有什么作用？"><a href="#4、final-在-java-中有什么作用？" class="headerlink" title="4、final 在 java 中有什么作用？"></a>4、final 在 java 中有什么作用？</h3><ul>
+<li>final 修饰的类叫最终类，该类不能被继承。 </li>
+<li>final 修饰的方法不能被重写。</li>
+<li>final 修饰的变量叫常量，常量必须初始化，初始化之后值就不能被修改。</li>
 </ul>
-<p>  对于我来说Lombok是一个好用的工具，在一般的项目开发中都可以用得上，但是在逻辑业务比较复杂的情况下，及并不推荐了，我们结合具体业务场景和项目实际情况。比如说，我现在有个十分复杂的业务，在getter/setter加一点点业务代码，就能极大的简化业务场景的代码，那我为什么还要使用Lombok呢。</p>
-<p>  <strong>硬币都有正反两面，Lombok也有它优点和缺点，结合具体业务场景和项目实际情况，灵活运用才是王道。</strong></p>
+<h3 id="5、java-中的-Math-round-1-5-等于多少？"><a href="#5、java-中的-Math-round-1-5-等于多少？" class="headerlink" title="5、java 中的 Math.round(-1.5) 等于多少？"></a>5、java 中的 Math.round(-1.5) 等于多少？</h3><p>等于 -1，因为在数轴上取值时，中间值（0.5）向右取整，所以正 0.5 是往上取整，负 0.5 是直接舍弃。</p>
+<h3 id="6、String-属于基础的数据类型吗？"><a href="#6、String-属于基础的数据类型吗？" class="headerlink" title="6、String 属于基础的数据类型吗？"></a>6、String 属于基础的数据类型吗？</h3><p>String 不属于基础类型，基础类型有 8 种：byte、boolean、char、short、int、float、long、double，而 String 属于对象。</p>
+<h3 id="7、java-中操作字符串都有哪些类？它们之间有什么区别？"><a href="#7、java-中操作字符串都有哪些类？它们之间有什么区别？" class="headerlink" title="7、java 中操作字符串都有哪些类？它们之间有什么区别？"></a>7、java 中操作字符串都有哪些类？它们之间有什么区别？</h3><p>操作字符串的类有：String、StringBuffer、StringBuilder。</p>
+<p>String 和 StringBuffer、StringBuilder 的区别在于 String 声明的是不可变的对象，每次操作都会生成新的 String 对象，然后将指针指向新的 String 对象，而 StringBuffer、StringBuilder 可以在原有对象的基础上进行操作，所以在经常改变字符串内容的情况下最好不要使用 String。</p>
+<p>StringBuffer 和 StringBuilder 最大的区别在于，StringBuffer 是线程安全的，而 StringBuilder 是非线程安全的，但 StringBuilder 的性能却高于 StringBuffer，所以在单线程环境下推荐使用 StringBuilder，多线程环境下推荐使用 StringBuffer。</p>
+<h3 id="8、String-str-”i”与-String-str-new-String-“i”-一样吗？"><a href="#8、String-str-”i”与-String-str-new-String-“i”-一样吗？" class="headerlink" title="8、String str=”i”与 String str=new String(“i”)一样吗？"></a>8、String str=”i”与 String str=new String(“i”)一样吗？</h3><p>不一样，因为内存的分配方式不一样。String str=”i”的方式，java 虚拟机会将其分配到常量池中；而 String str=new String(“i”) 则会被分到堆内存中。</p>
+<h3 id="9、如何将字符串反转？"><a href="#9、如何将字符串反转？" class="headerlink" title="9、如何将字符串反转？"></a>9、如何将字符串反转？</h3><p>使用 StringBuilder 或者 stringBuffer 的 reverse() 方法。示例代码：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// StringBuffer reverse</span>
+<span class="token class-name">StringBuffer</span> stringBuffer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuffer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+stringBuffer<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"abcdefg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>stringBuffer<span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// gfedcba</span>
+
+<span class="token comment">// StringBuilder reverse</span>
+<span class="token class-name">StringBuilder</span> stringBuilder <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+stringBuilder<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"abcdefg"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>stringBuilder<span class="token punctuation">.</span><span class="token function">reverse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// gfedcba</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="10、String-类的常用方法都有那些？"><a href="#10、String-类的常用方法都有那些？" class="headerlink" title="10、String 类的常用方法都有那些？"></a>10、String 类的常用方法都有那些？</h3><ul>
+<li>indexOf()：返回指定字符的索引。</li>
+<li>charAt()：返回指定索引处的字符。</li>
+<li>replace()：字符串替换。</li>
+<li>trim()：去除字符串两端空白。</li>
+<li>split()：分割字符串，返回一个分割后的字符串数组。</li>
+<li>getBytes()：返回字符串的 byte 类型数组。</li>
+<li>length()：返回字符串长度。</li>
+<li>toLowerCase()：将字符串转成小写字母。</li>
+<li>toUpperCase()：将字符串转成大写字符。</li>
+<li>substring()：截取字符串。</li>
+<li>equals()：字符串比较。</li>
+</ul>
+<h3 id="11、抽象类必须要有抽象方法吗？"><a href="#11、抽象类必须要有抽象方法吗？" class="headerlink" title="11、抽象类必须要有抽象方法吗？"></a>11、抽象类必须要有抽象方法吗？</h3><p>不需要，抽象类不一定非要有抽象方法。示例代码：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Cat</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hi~"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>上面代码，抽象类并没有抽象方法但完全可以正常运行。</p>
+<h3 id="12、抽象类必须要有抽象方法吗？"><a href="#12、抽象类必须要有抽象方法吗？" class="headerlink" title="12、抽象类必须要有抽象方法吗？"></a>12、抽象类必须要有抽象方法吗？</h3><ul>
+<li>普通类不能包含抽象方法，抽象类可以包含抽象方法。</li>
+<li>抽象类不能直接实例化，普通类可以直接实例化。</li>
+</ul>
+<h3 id="13、抽象类能使用-final-修饰吗？"><a href="#13、抽象类能使用-final-修饰吗？" class="headerlink" title="13、抽象类能使用 final 修饰吗？"></a>13、抽象类能使用 final 修饰吗？</h3><p>不能，定义抽象类就是让其他类继承的，如果定义为 final 该类就不能被继承，这样彼此就会产生矛盾，所以 final 不能修饰抽象类。</p>
+<h3 id="14、接口和抽象类有什么区别？"><a href="#14、接口和抽象类有什么区别？" class="headerlink" title="14、接口和抽象类有什么区别？"></a>14、接口和抽象类有什么区别？</h3><ul>
+<li>实现：抽象类的子类使用 extends 来继承；接口必须使用 implements 来实现接口。</li>
+<li>构造函数：抽象类可以有构造函数；接口不能有。</li>
+<li>main 方法：抽象类可以有 main 方法，并且我们能运行它；接口不能有 main 方法。 </li>
+<li>实现数量：类可以实现很多个接口；但是只能继承一个抽象类。</li>
+<li>访问修饰符：接口中的方法默认使用 public 修饰；抽象类中的方法可以是任意访问修饰符。</li>
+</ul>
+<h3 id="15、java-中-IO-流分为几种？"><a href="#15、java-中-IO-流分为几种？" class="headerlink" title="15、java 中 IO 流分为几种？"></a>15、java 中 IO 流分为几种？</h3><p>按功能来分：输入流（input）、输出流（output）。</p>
+<p>按类型来分：字节流和字符流。</p>
+<p>字节流和字符流的区别是：字节流按 8 位传输以字节为单位输入输出数据，字符流按 16 位传输以字符为单位输入输出数据。</p>
+<h3 id="16、BIO、NIO、AIO-有什么区别？"><a href="#16、BIO、NIO、AIO-有什么区别？" class="headerlink" title="16、BIO、NIO、AIO 有什么区别？"></a>16、BIO、NIO、AIO 有什么区别？</h3><ul>
+<li>BIO：Block IO 同步阻塞式 IO，就是我们平常使用的传统 IO，它的特点是模式简单使用方便，并发处理能力低。</li>
+<li>NIO：New IO 同步非阻塞 IO，是传统 IO 的升级，客户端和服务器端通过 Channel（通道）通讯，实现了多路复用。</li>
+<li>AIO：Asynchronous IO 是 NIO 的升级，也叫 NIO2，实现了异步非堵塞 IO ，异步 IO 的操作基于事件和回调机制。</li>
+</ul>
+<h3 id="17、Files的常用方法都有哪些？"><a href="#17、Files的常用方法都有哪些？" class="headerlink" title="17、Files的常用方法都有哪些？"></a>17、Files的常用方法都有哪些？</h3><ul>
+<li>Files.exists()：检测文件路径是否存在。</li>
+<li>Files.createFile()：创建文件。</li>
+<li>Files.createDirectory()：创建文件夹。</li>
+<li>Files.delete()：删除一个文件或目录。</li>
+<li>Files.copy()：复制文件。</li>
+<li>Files.move()：移动文件。</li>
+<li>Files.size()：查看文件个数。</li>
+<li>Files.read()：读取文件。</li>
+<li>Files.write()：写入文件。</li>
+</ul>
 
                 
             </div>
@@ -567,7 +675,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiejiabin1.github.io/2022/01/20/1642656390/">http://xiejiabin1.github.io/2022/01/20/1642656390/</a>
+                    <a href="http://xiejiabin1.github.io/2022/01/21/1642745607/">http://xiejiabin1.github.io/2022/01/21/1642745607/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -605,8 +713,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Lombok/">
-                                    <span class="chip bg-color">Lombok</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                                    <span class="chip bg-color">面试</span>
                                 </a>
                             
                         </div>
@@ -777,7 +889,7 @@
         repo: 'blogMessage',
         owner: 'xiejiabin1',
         admin: ["xiejiabin1"],
-        id: '2022-01-20T13-26-30',
+        id: '2022-01-21T14-13-27',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -809,6 +921,58 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2022/01/21/1642747213/">
+                    <div class="card-image">
+                        
+                        <img src="/images/Java%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86/background.png" class="responsive-img" alt="Java面试题整理（Java容器）">
+                        
+                        <span class="card-title">Java面试题整理（Java容器）</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-21
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categorie/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                        <span class="chip bg-color">面试</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2022/01/20/1642656872/">
                     <div class="card-image">
                         
@@ -824,9 +988,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-20
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -852,58 +1016,6 @@
                     
                     <a href="/tags/cookie/">
                         <span class="chip bg-color">cookie</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/14/1642151984/">
-                    <div class="card-image">
-                        
-                        <img src="/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.png" class="responsive-img" alt="win10中docker的安装与使用">
-                        
-                        <span class="card-title">win10中docker的安装与使用</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-14
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categorie/docker/" class="post-category">
-                                    docker
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/docker-for-windows/">
-                        <span class="chip bg-color">docker for windows</span>
-                    </a>
-                    
-                    <a href="/tags/docker/">
-                        <span class="chip bg-color">docker</span>
                     </a>
                     
                 </div>
