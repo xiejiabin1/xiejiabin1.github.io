@@ -6,7 +6,7 @@
   <link href="http://xiejiabin1.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiejiabin1.github.io/"/>
-  <updated>2022-01-25T08:47:38.000Z</updated>
+  <updated>2022-02-08T11:18:00.000Z</updated>
   <id>http://xiejiabin1.github.io/</id>
   
   <author>
@@ -17,191 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java面试题整理（异常）</title>
-    <link href="http://xiejiabin1.github.io/2022/01/25/1643100459/"/>
-    <id>http://xiejiabin1.github.io/2022/01/25/1643100459/</id>
-    <published>2022-01-25T08:47:38.000Z</published>
-    <updated>2022-01-25T08:47:38.000Z</updated>
+    <title>编码规范总结（码出高效，码出质量）</title>
+    <link href="http://xiejiabin1.github.io/2022/02/08/1644319080/"/>
+    <id>http://xiejiabin1.github.io/2022/02/08/1644319080/</id>
+    <published>2022-02-08T11:18:00.000Z</published>
+    <updated>2022-02-08T11:18:00.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;七、异常&quot;&gt;&lt;a href=&quot;#七、异常&quot; class=&quot;headerlink&quot; title=&quot;七、异常&quot;&gt;&lt;/a&gt;七、异常&lt;/h2&gt;&lt;h3 id=&quot;74-throw-和-throws-的区别？&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  现代软件架构都需要协同开发完成，高效协作即降低协同成本，提升沟通效率，所谓无规矩不成方圆，无规范不能协作。对软件来说，适当的规范和标准绝不是消灭代码内容的创造性、优雅性，而是限制过度个性化，以一种普遍认可的统一方式一起做事，提升协作效率。&lt;/p</summary>
         
       
     
     
     
-    <category term="Java" scheme="http://xiejiabin1.github.io/categorie/Java/"/>
+    <category term="个人感悟" scheme="http://xiejiabin1.github.io/categorie/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%82%9F/"/>
     
     
-    <category term="java" scheme="http://xiejiabin1.github.io/tags/java/"/>
-    
-    <category term="面试" scheme="http://xiejiabin1.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题整理（Java Web）</title>
-    <link href="http://xiejiabin1.github.io/2022/01/25/1643099949/"/>
-    <id>http://xiejiabin1.github.io/2022/01/25/1643099949/</id>
-    <published>2022-01-25T08:39:09.000Z</published>
-    <updated>2022-01-25T08:39:09.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;六、Java-Web&quot;&gt;&lt;a href=&quot;#六、Java-Web&quot; class=&quot;headerlink&quot; title=&quot;六、Java Web&quot;&gt;&lt;/a&gt;六、Java Web&lt;/h2&gt;&lt;h3 id=&quot;64-jsp-和-servlet-有什么区别？&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="http://xiejiabin1.github.io/categorie/Java/"/>
-    
-    
-    <category term="java" scheme="http://xiejiabin1.github.io/tags/java/"/>
-    
-    <category term="面试" scheme="http://xiejiabin1.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题整理（对象拷贝）</title>
-    <link href="http://xiejiabin1.github.io/2022/01/25/1643099627/"/>
-    <id>http://xiejiabin1.github.io/2022/01/25/1643099627/</id>
-    <published>2022-01-25T08:33:46.000Z</published>
-    <updated>2022-01-25T08:33:46.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;五、对象拷贝&quot;&gt;&lt;a href=&quot;#五、对象拷贝&quot; class=&quot;headerlink&quot; title=&quot;五、对象拷贝&quot;&gt;&lt;/a&gt;五、对象拷贝&lt;/h2&gt;&lt;h3 id=&quot;61-为什么要使用克隆？&quot;&gt;&lt;a href=&quot;#61-为什么要使用克隆？&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="http://xiejiabin1.github.io/categorie/Java/"/>
-    
-    
-    <category term="java" scheme="http://xiejiabin1.github.io/tags/java/"/>
-    
-    <category term="面试" scheme="http://xiejiabin1.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题整理（反射）</title>
-    <link href="http://xiejiabin1.github.io/2022/01/25/1643099277/"/>
-    <id>http://xiejiabin1.github.io/2022/01/25/1643099277/</id>
-    <published>2022-01-25T08:27:57.000Z</published>
-    <updated>2022-01-25T08:27:57.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;四、反射&quot;&gt;&lt;a href=&quot;#四、反射&quot; class=&quot;headerlink&quot; title=&quot;四、反射&quot;&gt;&lt;/a&gt;四、反射&lt;/h2&gt;&lt;h3 id=&quot;57-什么是反射？&quot;&gt;&lt;a href=&quot;#57-什么是反射？&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="http://xiejiabin1.github.io/categorie/Java/"/>
-    
-    
-    <category term="java" scheme="http://xiejiabin1.github.io/tags/java/"/>
-    
-    <category term="面试" scheme="http://xiejiabin1.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题整理（多线程）</title>
-    <link href="http://xiejiabin1.github.io/2022/01/25/1643098188/"/>
-    <id>http://xiejiabin1.github.io/2022/01/25/1643098188/</id>
-    <published>2022-01-25T08:09:48.000Z</published>
-    <updated>2022-01-25T08:09:48.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;三、多线程&quot;&gt;&lt;a href=&quot;#三、多线程&quot; class=&quot;headerlink&quot; title=&quot;三、多线程&quot;&gt;&lt;/a&gt;三、多线程&lt;/h2&gt;&lt;h3 id=&quot;35-并行和并发有什么区别？&quot;&gt;&lt;a href=&quot;#35-并行和并发有什么区别？&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="http://xiejiabin1.github.io/categorie/Java/"/>
-    
-    
-    <category term="java" scheme="http://xiejiabin1.github.io/tags/java/"/>
-    
-    <category term="面试" scheme="http://xiejiabin1.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题整理（Java容器）</title>
-    <link href="http://xiejiabin1.github.io/2022/01/21/1642747213/"/>
-    <id>http://xiejiabin1.github.io/2022/01/21/1642747213/</id>
-    <published>2022-01-21T06:40:13.000Z</published>
-    <updated>2022-01-21T06:40:13.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;二、java容器&quot;&gt;&lt;a href=&quot;#二、java容器&quot; class=&quot;headerlink&quot; title=&quot;二、java容器&quot;&gt;&lt;/a&gt;二、java容器&lt;/h2&gt;&lt;h3 id=&quot;18、java-容器都有哪些？&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="http://xiejiabin1.github.io/categorie/Java/"/>
-    
-    
-    <category term="java" scheme="http://xiejiabin1.github.io/tags/java/"/>
-    
-    <category term="面试" scheme="http://xiejiabin1.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java面试题整理（Java基础）</title>
-    <link href="http://xiejiabin1.github.io/2022/01/21/1642745607/"/>
-    <id>http://xiejiabin1.github.io/2022/01/21/1642745607/</id>
-    <published>2022-01-21T06:13:27.000Z</published>
-    <updated>2022-01-21T06:13:27.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;一、java基础&quot;&gt;&lt;a href=&quot;#一、java基础&quot; class=&quot;headerlink&quot; title=&quot;一、java基础&quot;&gt;&lt;/a&gt;一、java基础&lt;/h2&gt;&lt;h3 id=&quot;1、JDK-和-JRE-有什么区别？&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="Java" scheme="http://xiejiabin1.github.io/categorie/Java/"/>
-    
-    
-    <category term="java" scheme="http://xiejiabin1.github.io/tags/java/"/>
-    
-    <category term="面试" scheme="http://xiejiabin1.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+    <category term="编码规范、总结" scheme="http://xiejiabin1.github.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E3%80%81%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   
