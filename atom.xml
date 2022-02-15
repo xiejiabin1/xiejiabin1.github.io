@@ -6,7 +6,7 @@
   <link href="http://xiejiabin1.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiejiabin1.github.io/"/>
-  <updated>2022-02-08T11:18:00.000Z</updated>
+  <updated>2022-01-20T05:34:31.000Z</updated>
   <id>http://xiejiabin1.github.io/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>编码规范总结（码出高效，码出质量）</title>
-    <link href="http://xiejiabin1.github.io/2022/02/08/1644319080/"/>
-    <id>http://xiejiabin1.github.io/2022/02/08/1644319080/</id>
-    <published>2022-02-08T11:18:00.000Z</published>
-    <updated>2022-02-08T11:18:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;  现代软件架构都需要协同开发完成，高效协作即降低协同成本，提升沟通效率，所谓无规矩不成方圆，无规范不能协作。对软件来说，适当的规范和标准绝不是消灭代码内容的创造性、优雅性，而是限制过度个性化，以一种普遍认可的统一方式一起做事，提升协作效率。&lt;/p</summary>
-        
-      
-    
-    
-    
-    <category term="个人感悟" scheme="http://xiejiabin1.github.io/categorie/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%82%9F/"/>
-    
-    
-    <category term="编码规范、总结" scheme="http://xiejiabin1.github.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83%E3%80%81%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
   
   <entry>
     <title>Nginx跨域的解决方法</title>
