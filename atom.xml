@@ -6,7 +6,7 @@
   <link href="https://xjb430.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://xjb430.gitee.io/blog/"/>
-  <updated>2022-01-20T05:34:31.000Z</updated>
+  <updated>2022-01-21T06:13:27.000Z</updated>
   <id>https://xjb430.gitee.io/blog/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java面试题整理（Java基础）</title>
+    <link href="https://xjb430.gitee.io/blog/2022/01/21/1642745607/"/>
+    <id>https://xjb430.gitee.io/blog/2022/01/21/1642745607/</id>
+    <published>2022-01-21T06:13:27.000Z</published>
+    <updated>2022-01-21T06:13:27.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;一、java基础&quot;&gt;&lt;a href=&quot;#一、java基础&quot; class=&quot;headerlink&quot; title=&quot;一、java基础&quot;&gt;&lt;/a&gt;一、java基础&lt;/h2&gt;&lt;h3 id=&quot;1、JDK-和-JRE-有什么区别？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/blog/categorie/Java/"/>
+    
+    
+    <category term="java" scheme="https://xjb430.gitee.io/blog/tags/java/"/>
+    
+    <category term="面试" scheme="https://xjb430.gitee.io/blog/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Nginx跨域的解决方法</title>
