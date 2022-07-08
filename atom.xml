@@ -6,7 +6,7 @@
   <link href="https://xjb430.gitee.io/blog/atom.xml" rel="self"/>
   
   <link href="https://xjb430.gitee.io/blog/"/>
-  <updated>2022-01-21T06:13:27.000Z</updated>
+  <updated>2022-07-07T14:16:31.000Z</updated>
   <id>https://xjb430.gitee.io/blog/</id>
   
   <author>
@@ -17,29 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java面试题整理（Java基础）</title>
-    <link href="https://xjb430.gitee.io/blog/2022/01/21/1642745607/"/>
-    <id>https://xjb430.gitee.io/blog/2022/01/21/1642745607/</id>
-    <published>2022-01-21T06:13:27.000Z</published>
-    <updated>2022-01-21T06:13:27.000Z</updated>
+    <title>高并发场景乐观锁与悲观锁</title>
+    <link href="https://xjb430.gitee.io/blog/2022/07/07/1657201658/"/>
+    <id>https://xjb430.gitee.io/blog/2022/07/07/1657201658/</id>
+    <published>2022-07-07T13:47:38.000Z</published>
+    <updated>2022-07-07T14:16:31.000Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;一、java基础&quot;&gt;&lt;a href=&quot;#一、java基础&quot; class=&quot;headerlink&quot; title=&quot;一、java基础&quot;&gt;&lt;/a&gt;一、java基础&lt;/h2&gt;&lt;h3 id=&quot;1、JDK-和-JRE-有什么区别？&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;  当程序中可能出现并发的情况时，就需要保证在并发情况下数据的准确性，以此确保当前用户和其他用户一起操作时，所得到的结果和他单独操作时的结果是一样的。这就叫做并发控制。并发控制的目的是保证一个用户的工作不会对另一个用户的工作产生不合理的影响。&lt;/p</summary>
         
       
     
     
     
-    <category term="Java" scheme="https://xjb430.gitee.io/blog/categorie/Java/"/>
+    <category term="Java锁" scheme="https://xjb430.gitee.io/blog/categorie/Java%E9%94%81/"/>
     
     
-    <category term="java" scheme="https://xjb430.gitee.io/blog/tags/java/"/>
+    <category term="高并发" scheme="https://xjb430.gitee.io/blog/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/"/>
     
-    <category term="面试" scheme="https://xjb430.gitee.io/blog/tags/%E9%9D%A2%E8%AF%95/"/>
+    <category term="Java锁" scheme="https://xjb430.gitee.io/blog/tags/Java%E9%94%81/"/>
     
   </entry>
   
