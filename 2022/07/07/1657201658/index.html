@@ -519,7 +519,7 @@
 <li>以数据库锁机制实现悲观锁：悲观锁的实现，往往依靠数据库提供的锁机制，也只有数据库层提供的锁机制才能真正保证数据访问的排他性，否则，即使在本系统中实现了加锁机制，也无法保证外部系统不会修改数据。</li>
 <li>使用 <strong>synchronized</strong> 关键字实现：synchronized是有序性的，一个变量在同一时刻只允许一条线程对其进行 lock 操作。</li>
 </ul>
-<p><img src="/images/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%9C%BA%E6%99%AF%E4%B9%90%E8%A7%82%E9%94%81%E4%B8%8E%E6%82%B2%E8%A7%82%E9%94%81/1.jpg"></p>
+<p><img src="/blog/images/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%9C%BA%E6%99%AF%E4%B9%90%E8%A7%82%E9%94%81%E4%B8%8E%E6%82%B2%E8%A7%82%E9%94%81/1.jpg"></p>
 <h2 id="2、以数据库锁机制实现悲观锁"><a href="#2、以数据库锁机制实现悲观锁" class="headerlink" title="2、以数据库锁机制实现悲观锁"></a>2、以数据库锁机制实现悲观锁</h2><blockquote>
 <p><strong>场景</strong>：有用户A和用户B，在同一家店铺去购买同一个商品，但是商品的可购买数量只有一个。在不加锁的情况下，如果用户A和用户B同时下单，就会报错。</p>
 </blockquote>
@@ -564,11 +564,11 @@
 <li>session1用户可以查询这张表的数据，session2也可以查询这张表的数据</li>
 <li>session1用户修改这张表失败了，因为现在把这张表锁了，所以修改操作会出错</li>
 </ul>
-<p><img src="/images/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%9C%BA%E6%99%AF%E4%B9%90%E8%A7%82%E9%94%81%E4%B8%8E%E6%82%B2%E8%A7%82%E9%94%81/2.jpg"></p>
+<p><img src="/blog/images/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%9C%BA%E6%99%AF%E4%B9%90%E8%A7%82%E9%94%81%E4%B8%8E%E6%82%B2%E8%A7%82%E9%94%81/2.jpg"></p>
 <ul>
 <li>session1查看别的锁时，发现也失败了，因为当锁住了test_table这张表时，在对这张表操作完之后应该释放掉这把锁才能操作别的表</li>
 </ul>
-<p><img src="/images/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%9C%BA%E6%99%AF%E4%B9%90%E8%A7%82%E9%94%81%E4%B8%8E%E6%82%B2%E8%A7%82%E9%94%81/3.jpg"></p>
+<p><img src="/blog/images/%E9%AB%98%E5%B9%B6%E5%8F%91%E5%9C%BA%E6%99%AF%E4%B9%90%E8%A7%82%E9%94%81%E4%B8%8E%E6%82%B2%E8%A7%82%E9%94%81/3.jpg"></p>
 <ul>
 <li>session2想要修改这张已经被锁住的test_table表的内容时，会陷入阻塞中，因为test_table的锁还有释放不能进行修改操作</li>
 <li>unlock tables 解除读锁</li>
@@ -1096,7 +1096,7 @@
 
         var selection = window.getSelection();
         // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('120')) {
+        if (('' + selection).length < Number.parseInt('20')) {
             return;
         }
 
