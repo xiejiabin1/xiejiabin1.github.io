@@ -3,11 +3,11 @@
   <title>先谢郭嘉&#39;blog</title>
   
   <subtitle>记录美好生活</subtitle>
-  <link href="https://xjb430.gitee.io/blog/atom.xml" rel="self"/>
+  <link href="https://xjb430.gitee.io/atom.xml" rel="self"/>
   
-  <link href="https://xjb430.gitee.io/blog/"/>
+  <link href="https://xjb430.gitee.io/"/>
   <updated>2022-07-07T14:16:31.000Z</updated>
-  <id>https://xjb430.gitee.io/blog/</id>
+  <id>https://xjb430.gitee.io/</id>
   
   <author>
     <name>先谢郭嘉</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>高并发场景乐观锁与悲观锁</title>
-    <link href="https://xjb430.gitee.io/blog/2022/07/07/1657201658/"/>
-    <id>https://xjb430.gitee.io/blog/2022/07/07/1657201658/</id>
+    <link href="https://xjb430.gitee.io/2022/07/07/1657201658/"/>
+    <id>https://xjb430.gitee.io/2022/07/07/1657201658/</id>
     <published>2022-07-07T13:47:38.000Z</published>
     <updated>2022-07-07T14:16:31.000Z</updated>
     
@@ -36,19 +36,19 @@
     
     
     
-    <category term="Java锁" scheme="https://xjb430.gitee.io/blog/categorie/Java%E9%94%81/"/>
+    <category term="Java锁" scheme="https://xjb430.gitee.io/categorie/Java%E9%94%81/"/>
     
     
-    <category term="高并发" scheme="https://xjb430.gitee.io/blog/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/"/>
+    <category term="高并发" scheme="https://xjb430.gitee.io/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/"/>
     
-    <category term="Java锁" scheme="https://xjb430.gitee.io/blog/tags/Java%E9%94%81/"/>
+    <category term="Java锁" scheme="https://xjb430.gitee.io/tags/Java%E9%94%81/"/>
     
   </entry>
   
   <entry>
     <title>Nginx跨域的解决方法</title>
-    <link href="https://xjb430.gitee.io/blog/2022/01/20/1642656872/"/>
-    <id>https://xjb430.gitee.io/blog/2022/01/20/1642656872/</id>
+    <link href="https://xjb430.gitee.io/2022/01/20/1642656872/"/>
+    <id>https://xjb430.gitee.io/2022/01/20/1642656872/</id>
     <published>2022-01-20T05:34:31.000Z</published>
     <updated>2022-01-20T05:34:31.000Z</updated>
     
@@ -64,21 +64,21 @@
     
     
     
-    <category term="Nginx" scheme="https://xjb430.gitee.io/blog/categorie/Nginx/"/>
+    <category term="Nginx" scheme="https://xjb430.gitee.io/categorie/Nginx/"/>
     
     
-    <category term="nginx" scheme="https://xjb430.gitee.io/blog/tags/nginx/"/>
+    <category term="nginx" scheme="https://xjb430.gitee.io/tags/nginx/"/>
     
-    <category term="跨域" scheme="https://xjb430.gitee.io/blog/tags/%E8%B7%A8%E5%9F%9F/"/>
+    <category term="跨域" scheme="https://xjb430.gitee.io/tags/%E8%B7%A8%E5%9F%9F/"/>
     
-    <category term="cookie" scheme="https://xjb430.gitee.io/blog/tags/cookie/"/>
+    <category term="cookie" scheme="https://xjb430.gitee.io/tags/cookie/"/>
     
   </entry>
   
   <entry>
     <title>Lombok的简介与使用以及总结</title>
-    <link href="https://xjb430.gitee.io/blog/2022/01/20/1642656390/"/>
-    <id>https://xjb430.gitee.io/blog/2022/01/20/1642656390/</id>
+    <link href="https://xjb430.gitee.io/2022/01/20/1642656390/"/>
+    <id>https://xjb430.gitee.io/2022/01/20/1642656390/</id>
     <published>2022-01-20T05:26:30.000Z</published>
     <updated>2022-01-20T05:26:30.000Z</updated>
     
@@ -94,17 +94,17 @@
     
     
     
-    <category term="Lombok" scheme="https://xjb430.gitee.io/blog/categorie/Lombok/"/>
+    <category term="Lombok" scheme="https://xjb430.gitee.io/categorie/Lombok/"/>
     
     
-    <category term="Lombok" scheme="https://xjb430.gitee.io/blog/tags/Lombok/"/>
+    <category term="Lombok" scheme="https://xjb430.gitee.io/tags/Lombok/"/>
     
   </entry>
   
   <entry>
     <title>win10中docker的安装与使用</title>
-    <link href="https://xjb430.gitee.io/blog/2022/01/14/1642151984/"/>
-    <id>https://xjb430.gitee.io/blog/2022/01/14/1642151984/</id>
+    <link href="https://xjb430.gitee.io/2022/01/14/1642151984/"/>
+    <id>https://xjb430.gitee.io/2022/01/14/1642151984/</id>
     <published>2022-01-14T09:19:44.000Z</published>
     <updated>2022-01-14T09:19:44.000Z</updated>
     
@@ -120,19 +120,19 @@
     
     
     
-    <category term="docker" scheme="https://xjb430.gitee.io/blog/categorie/docker/"/>
+    <category term="docker" scheme="https://xjb430.gitee.io/categorie/docker/"/>
     
     
-    <category term="docker for windows" scheme="https://xjb430.gitee.io/blog/tags/docker-for-windows/"/>
+    <category term="docker for windows" scheme="https://xjb430.gitee.io/tags/docker-for-windows/"/>
     
-    <category term="docker" scheme="https://xjb430.gitee.io/blog/tags/docker/"/>
+    <category term="docker" scheme="https://xjb430.gitee.io/tags/docker/"/>
     
   </entry>
   
   <entry>
     <title>MybatisPlus代码生成器AutoGenerator的简介和使用</title>
-    <link href="https://xjb430.gitee.io/blog/2022/01/14/1642136664/"/>
-    <id>https://xjb430.gitee.io/blog/2022/01/14/1642136664/</id>
+    <link href="https://xjb430.gitee.io/2022/01/14/1642136664/"/>
+    <id>https://xjb430.gitee.io/2022/01/14/1642136664/</id>
     <published>2022-01-14T07:15:00.000Z</published>
     <updated>2022-01-14T07:15:00.000Z</updated>
     
@@ -148,21 +148,21 @@
     
     
     
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/blog/categorie/Mybatis/"/>
+    <category term="Mybatis" scheme="https://xjb430.gitee.io/categorie/Mybatis/"/>
     
     
-    <category term="MybatisPlus" scheme="https://xjb430.gitee.io/blog/tags/MybatisPlus/"/>
+    <category term="MybatisPlus" scheme="https://xjb430.gitee.io/tags/MybatisPlus/"/>
     
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/blog/tags/Mybatis/"/>
+    <category term="Mybatis" scheme="https://xjb430.gitee.io/tags/Mybatis/"/>
     
-    <category term="AutoGenerator" scheme="https://xjb430.gitee.io/blog/tags/AutoGenerator/"/>
+    <category term="AutoGenerator" scheme="https://xjb430.gitee.io/tags/AutoGenerator/"/>
     
   </entry>
   
   <entry>
     <title>MybatisPlus中通用mapper的CRUD操作封装</title>
-    <link href="https://xjb430.gitee.io/blog/2022/01/14/1642144500/"/>
-    <id>https://xjb430.gitee.io/blog/2022/01/14/1642144500/</id>
+    <link href="https://xjb430.gitee.io/2022/01/14/1642144500/"/>
+    <id>https://xjb430.gitee.io/2022/01/14/1642144500/</id>
     <published>2022-01-14T05:04:24.000Z</published>
     <updated>2022-01-14T05:04:24.000Z</updated>
     
@@ -178,19 +178,19 @@
     
     
     
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/blog/categorie/Mybatis/"/>
+    <category term="Mybatis" scheme="https://xjb430.gitee.io/categorie/Mybatis/"/>
     
     
-    <category term="MybatisPlus" scheme="https://xjb430.gitee.io/blog/tags/MybatisPlus/"/>
+    <category term="MybatisPlus" scheme="https://xjb430.gitee.io/tags/MybatisPlus/"/>
     
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/blog/tags/Mybatis/"/>
+    <category term="Mybatis" scheme="https://xjb430.gitee.io/tags/Mybatis/"/>
     
   </entry>
   
   <entry>
     <title>vue-cli脚手架的简介与搭建</title>
-    <link href="https://xjb430.gitee.io/blog/2022/01/14/1642120427/"/>
-    <id>https://xjb430.gitee.io/blog/2022/01/14/1642120427/</id>
+    <link href="https://xjb430.gitee.io/2022/01/14/1642120427/"/>
+    <id>https://xjb430.gitee.io/2022/01/14/1642120427/</id>
     <published>2022-01-14T00:33:47.000Z</published>
     <updated>2022-01-14T00:33:47.000Z</updated>
     
@@ -206,12 +206,12 @@
     
     
     
-    <category term="前端vue" scheme="https://xjb430.gitee.io/blog/categorie/%E5%89%8D%E7%AB%AFvue/"/>
+    <category term="前端vue" scheme="https://xjb430.gitee.io/categorie/%E5%89%8D%E7%AB%AFvue/"/>
     
     
-    <category term="vue-cli" scheme="https://xjb430.gitee.io/blog/tags/vue-cli/"/>
+    <category term="vue-cli" scheme="https://xjb430.gitee.io/tags/vue-cli/"/>
     
-    <category term="vue" scheme="https://xjb430.gitee.io/blog/tags/vue/"/>
+    <category term="vue" scheme="https://xjb430.gitee.io/tags/vue/"/>
     
   </entry>
   
