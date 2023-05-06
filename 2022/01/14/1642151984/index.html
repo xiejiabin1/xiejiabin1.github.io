@@ -313,7 +313,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/background.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -513,20 +513,20 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 <h2 id="1、安装docker"><a href="#1、安装docker" class="headerlink" title="1、安装docker"></a>1、安装docker</h2><h3 id="安装条件"><a href="#安装条件" class="headerlink" title="安装条件"></a>安装条件</h3><p>  1、docker for windows只适用于win8以上的系统，win10是现在的主流，所以这里我将介绍的是win10系统中docker的安装和使用。</p>
 <p>  2、开启电脑的虚拟化，一般电脑都是默认开启的。可以在任务管理器-&gt;性能-&gt;CPU下查看虚拟化是否开启。</p>
 <p>  3、查看Hyper-v是否开启，启用Hyper-v可以在电脑中配置虚拟机。开启步骤：控制面板-&gt;程序-&gt;启用或关闭Windows功能-&gt;把Hyper-v勾上-&gt;最后重启电脑就可以了。</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/1.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/1.jpg"></p>
 <h3 id="下载和安装"><a href="#下载和安装" class="headerlink" title="下载和安装"></a>下载和安装</h3><p>官网下载链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/editions/community/docker-ce-desktop-windows/">https://hub.docker.com/editions/community/docker-ce-desktop-windows/</a>，选择稳定版下载。</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/2.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/2.jpg"></p>
 <p>安装这里没什么好描述的，一直按确定就好了。</p>
 <h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>进入cmd窗口查看docker是否安装成功。（dicker –version）</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/3.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/3.jpg"></p>
 <h2 id="2、docker配置"><a href="#2、docker配置" class="headerlink" title="2、docker配置"></a>2、docker配置</h2><h3 id="注册登录账号"><a href="#注册登录账号" class="headerlink" title="注册登录账号"></a>注册登录账号</h3><p>下载安装完成后，双击图标进入，程序在运行的话，桌面右下角通知栏会有一个小鲸鱼的图标。这里需要注册登录一个账号，可以在官网注册一个账号。官网链接：<a target="_blank" rel="noopener" href="https://hub.docker.com/">https://hub.docker.com/</a></p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/4.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/4.jpg"></p>
 <h3 id="配置镜像加速"><a href="#配置镜像加速" class="headerlink" title="配置镜像加速"></a>配置镜像加速</h3><p>为什么要配置镜像加速，因为docker在国内的下载速度特别慢，所以我们通常会在配置一下镜像加速。一般用的是阿里云的免费加速。配置步骤：登录阿里云-&gt;控制台-&gt;搜索容器镜像服务（或者左上角产品与服务中找）,然后就是下面的图片示例：</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/5.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/5.jpg"></p>
 <p>复制加速器地址，将地址粘贴到registry-mirrors的json字符串中。</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/6.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/6.jpg"></p>
 <h2 id="3、docker可视化界面Portainer"><a href="#3、docker可视化界面Portainer" class="headerlink" title="3、docker可视化界面Portainer"></a>3、docker可视化界面Portainer</h2><h3 id="下载prtainer镜像"><a href="#下载prtainer镜像" class="headerlink" title="下载prtainer镜像"></a>下载prtainer镜像</h3><p>先在docker中搜索查看Portainer镜像有哪些（docker search portainer）</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/7.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/7.jpg"></p>
 <p><strong>选择第一个portainer/portainer下载（docker pull portainer/portainer）</strong></p>
 <h3 id="运行portainer镜像生成portainer容器"><a href="#运行portainer镜像生成portainer容器" class="headerlink" title="运行portainer镜像生成portainer容器"></a>运行portainer镜像生成portainer容器</h3><p> 运行portainer分为单机运行和集群运行，由于我们是用来开发和测试，这里选择单机运行。以下是命令行：</p>
 <pre class="line-numbers language-none"><code class="language-none">docker run -d -p 9000:9000 \
@@ -535,17 +535,17 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
 --name portainer \portainer/portainer<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="输入localhost-9000登录portainer"><a href="#输入localhost-9000登录portainer" class="headerlink" title="输入localhost:9000登录portainer"></a>输入localhost:9000登录portainer</h3><p>1、首次登陆需要注册用户<br>2、单机版选择Local</p>
 <h2 id="4、Portainer的使用"><a href="#4、Portainer的使用" class="headerlink" title="4、Portainer的使用"></a>4、Portainer的使用</h2><p>输入账户和密码登录</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/8.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/8.jpg"></p>
 <p>登录成功后就可以看到自己的docker实例了</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/9.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/9.jpg"></p>
 <p>点击docker，你可以看到自己的镜像（images）和容器（containers）</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/10.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/10.jpg"></p>
 <p>在容器中，不用命令就可以管理容器。不过对容器参数进行i修改后需要重启容器才能生效。</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/11.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/11.jpg"></p>
 <p>可以添加新镜像（需要配置加速，不然下载速度很慢，有时候就算加速了也比较慢，可以换个加速器）</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/12.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/12.jpg"></p>
 <p>还可以搜索常用镜像下载</p>
-<p><img src="/blog/images/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/13.jpg"></p>
+<p><img src="/blog/images/%E7%AC%94%E8%AE%B0/win10%E4%B8%ADdocker%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/13.jpg"></p>
 
                 
             </div>
@@ -816,7 +816,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                 <a href="/blog/2022/01/20/1642656390/">
                     <div class="card-image">
                         
-                        <img src="/blog/images/Lombok%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%80%BB%E7%BB%93/background.jpg" class="responsive-img" alt="Lombok的简介与使用以及总结">
+                        <img src="/blog/images/%E7%AC%94%E8%AE%B0/Lombok%E7%9A%84%E7%AE%80%E4%BB%8B%E4%B8%8E%E4%BD%BF%E7%94%A8%E4%BB%A5%E5%8F%8A%E6%80%BB%E7%BB%93/background.jpg" class="responsive-img" alt="Lombok的简介与使用以及总结">
                         
                         <span class="card-title">Lombok的简介与使用以及总结</span>
                     </div>
@@ -864,7 +864,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
                 <a href="/blog/2022/01/14/1642136664/">
                     <div class="card-image">
                         
-                        <img src="/blog/images/MybatisPlus%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8AutoGenerator%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/background.jpg" class="responsive-img" alt="MybatisPlus代码生成器AutoGenerator的简介和使用">
+                        <img src="/blog/images/%E7%AC%94%E8%AE%B0/MybatisPlus%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8AutoGenerator%E7%9A%84%E7%AE%80%E4%BB%8B%E5%92%8C%E4%BD%BF%E7%94%A8/background.jpg" class="responsive-img" alt="MybatisPlus代码生成器AutoGenerator的简介和使用">
                         
                         <span class="card-title">MybatisPlus代码生成器AutoGenerator的简介和使用</span>
                     </div>
@@ -1136,7 +1136,7 @@ Docker 是一个开源的应用容器引擎，让开发者可以打包他们的�
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022</span>
+                <span id="year">2022-2023</span>
             
             <a href="/blog/about" target="_blank">先谢郭嘉</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
