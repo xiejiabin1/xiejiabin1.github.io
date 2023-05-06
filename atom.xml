@@ -6,7 +6,7 @@
   <link href="https://xjb430.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://xjb430.gitee.io/"/>
-  <updated>2022-07-07T14:16:31.000Z</updated>
+  <updated>2023-05-06T05:26:45.000Z</updated>
   <id>https://xjb430.gitee.io/</id>
   
   <author>
@@ -15,6 +15,94 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java面向对象</title>
+    <link href="https://xjb430.gitee.io/2023/05/06/1683342121/"/>
+    <id>https://xjb430.gitee.io/2023/05/06/1683342121/</id>
+    <published>2023-05-06T05:16:20.000Z</published>
+    <updated>2023-05-06T05:26:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-面向对象&quot;&gt;&lt;a href=&quot;#Java-面向对象&quot; class=&quot;headerlink&quot; title=&quot;Java 面向对象&quot;&gt;&lt;/a&gt;Java 面向对象&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;在Java基本数据类型中我们了解 Java</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="面向对象" scheme="https://xjb430.gitee.io/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java基本数据类型</title>
+    <link href="https://xjb430.gitee.io/2023/05/06/1683339998/"/>
+    <id>https://xjb430.gitee.io/2023/05/06/1683339998/</id>
+    <published>2023-05-06T03:26:30.000Z</published>
+    <updated>2023-05-06T03:26:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-基本数据类型&quot;&gt;&lt;a href=&quot;#深入理解-Java-基本数据类型&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 基本数据类型&quot;&gt;&lt;/a&gt;深入理解 Java 基本数据类型&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="数据类型" scheme="https://xjb430.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java基础语法</title>
+    <link href="https://xjb430.gitee.io/2023/05/06/1683339990/"/>
+    <id>https://xjb430.gitee.io/2023/05/06/1683339990/</id>
+    <published>2023-05-06T02:26:30.000Z</published>
+    <updated>2023-05-06T02:26:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-基础语法特性&quot;&gt;&lt;a href=&quot;#Java-基础语法特性&quot; class=&quot;headerlink&quot; title=&quot;Java 基础语法特性&quot;&gt;&lt;/a&gt;Java 基础语法特性&lt;/h1&gt;&lt;h2 id=&quot;注释&quot;&gt;&lt;a href=&quot;#注释&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="基础特性" scheme="https://xjb430.gitee.io/tags/%E5%9F%BA%E7%A1%80%E7%89%B9%E6%80%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>高并发场景乐观锁与悲观锁</title>
