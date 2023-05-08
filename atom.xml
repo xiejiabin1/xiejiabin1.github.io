@@ -6,7 +6,7 @@
   <link href="https://xjb430.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://xjb430.gitee.io/"/>
-  <updated>2023-05-06T05:36:45.000Z</updated>
+  <updated>2023-05-08T01:16:45.000Z</updated>
   <id>https://xjb430.gitee.io/</id>
   
   <author>
@@ -15,6 +15,224 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java注解</title>
+    <link href="https://xjb430.gitee.io/2023/05/08/1683508280/"/>
+    <id>https://xjb430.gitee.io/2023/05/08/1683508280/</id>
+    <published>2023-05-08T01:11:20.000Z</published>
+    <updated>2023-05-08T01:16:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-注解&quot;&gt;&lt;a href=&quot;#深入理解-Java-注解&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 注解&quot;&gt;&lt;/a&gt;深入理解 Java 注解&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本文内容基于 JDK8。注解是</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java反射</title>
+    <link href="https://xjb430.gitee.io/2023/05/08/1683504920/"/>
+    <id>https://xjb430.gitee.io/2023/05/08/1683504920/</id>
+    <published>2023-05-08T00:15:20.000Z</published>
+    <updated>2023-05-08T00:16:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-反射和动态代理&quot;&gt;&lt;a href=&quot;#深入理解-Java-反射和动态代理&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 反射和动态代理&quot;&gt;&lt;/a&gt;深入理解 Java 反射和动态代理&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java泛型</title>
+    <link href="https://xjb430.gitee.io/2023/05/07/1683472520/"/>
+    <id>https://xjb430.gitee.io/2023/05/07/1683472520/</id>
+    <published>2023-05-07T15:15:20.000Z</published>
+    <updated>2023-05-07T15:16:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-泛型&quot;&gt;&lt;a href=&quot;#深入理解-Java-泛型&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 泛型&quot;&gt;&lt;/a&gt;深入理解 Java 泛型&lt;/h1&gt;&lt;h2 id=&quot;为什么需要泛型&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java异常</title>
+    <link href="https://xjb430.gitee.io/2023/05/07/1683469005/"/>
+    <id>https://xjb430.gitee.io/2023/05/07/1683469005/</id>
+    <published>2023-05-07T14:16:20.000Z</published>
+    <updated>2023-05-07T14:16:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-异常&quot;&gt;&lt;a href=&quot;#深入理解-Java-异常&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 异常&quot;&gt;&lt;/a&gt;深入理解 Java 异常&lt;/h1&gt;&lt;h2 id=&quot;异常框架&quot;&gt;&lt;a href=&quot;#异常框架&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java控制语句</title>
+    <link href="https://xjb430.gitee.io/2023/05/07/1683458780/"/>
+    <id>https://xjb430.gitee.io/2023/05/07/1683458780/</id>
+    <published>2023-05-07T11:26:20.000Z</published>
+    <updated>2023-05-07T11:36:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-控制语句&quot;&gt;&lt;a href=&quot;#Java-控制语句&quot; class=&quot;headerlink&quot; title=&quot;Java 控制语句&quot;&gt;&lt;/a&gt;Java 控制语句&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Java</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java数组</title>
+    <link href="https://xjb430.gitee.io/2023/05/07/1683451580/"/>
+    <id>https://xjb430.gitee.io/2023/05/07/1683451580/</id>
+    <published>2023-05-07T09:26:20.000Z</published>
+    <updated>2023-05-07T09:36:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-枚举&quot;&gt;&lt;a href=&quot;#深入理解-Java-枚举&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 枚举&quot;&gt;&lt;/a&gt;深入理解 Java 枚举&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java枚举</title>
+    <link href="https://xjb430.gitee.io/2023/05/07/1683441405/"/>
+    <id>https://xjb430.gitee.io/2023/05/07/1683441405/</id>
+    <published>2023-05-07T06:26:20.000Z</published>
+    <updated>2023-05-07T06:36:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-数组&quot;&gt;&lt;a href=&quot;#深入理解-Java-数组&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 数组&quot;&gt;&lt;/a&gt;深入理解 Java 数组&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java方法</title>
+    <link href="https://xjb430.gitee.io/2023/05/07/1683429980/"/>
+    <id>https://xjb430.gitee.io/2023/05/07/1683429980/</id>
+    <published>2023-05-07T03:26:20.000Z</published>
+    <updated>2023-05-07T03:36:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;深入理解-Java-方法&quot;&gt;&lt;a href=&quot;#深入理解-Java-方法&quot; class=&quot;headerlink&quot; title=&quot;深入理解 Java 方法&quot;&gt;&lt;/a&gt;深入理解 Java</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
   
   <entry>
     <title>Java面向对象</title>
