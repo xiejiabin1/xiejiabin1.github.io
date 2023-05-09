@@ -6,7 +6,7 @@
   <link href="https://xjb430.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://xjb430.gitee.io/"/>
-  <updated>2023-05-08T01:16:45.000Z</updated>
+  <updated>2023-05-09T06:25:50.000Z</updated>
   <id>https://xjb430.gitee.io/</id>
   
   <author>
@@ -15,6 +15,289 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java容器之Stream</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683613550/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683613550/</id>
+    <published>2023-05-09T06:25:50.000Z</published>
+    <updated>2023-05-09T06:25:50.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-容器之-Stream&quot;&gt;&lt;a href=&quot;#Java-容器之-Stream&quot; class=&quot;headerlink&quot; title=&quot;Java 容器之 Stream&quot;&gt;&lt;/a&gt;Java 容器之 Stream&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="容器" scheme="https://xjb430.gitee.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java容器之Queue</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683613545/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683613545/</id>
+    <published>2023-05-09T06:25:45.000Z</published>
+    <updated>2023-05-09T06:25:45.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-容器之-Queue&quot;&gt;&lt;a href=&quot;#Java-容器之-Queue&quot; class=&quot;headerlink&quot; title=&quot;Java 容器之 Queue&quot;&gt;&lt;/a&gt;Java 容器之 Queue&lt;/h1&gt;&lt;h2 id=&quot;Queue-简介&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="容器" scheme="https://xjb430.gitee.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java容器之Map</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683613530/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683613530/</id>
+    <published>2023-05-09T06:25:30.000Z</published>
+    <updated>2023-05-09T06:25:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-容器之-Map&quot;&gt;&lt;a href=&quot;#Java-容器之-Map&quot; class=&quot;headerlink&quot; title=&quot;Java 容器之 Map&quot;&gt;&lt;/a&gt;Java 容器之 Map&lt;/h1&gt;&lt;h2 id=&quot;Map-简介&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="容器" scheme="https://xjb430.gitee.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java容器之List</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683613350/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683613350/</id>
+    <published>2023-05-09T06:22:30.000Z</published>
+    <updated>2023-05-09T06:22:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-容器之-List&quot;&gt;&lt;a href=&quot;#Java-容器之-List&quot; class=&quot;headerlink&quot; title=&quot;Java 容器之 List&quot;&gt;&lt;/a&gt;Java 容器之</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="容器" scheme="https://xjb430.gitee.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java容器之Set</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683609935/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683609935/</id>
+    <published>2023-05-09T05:25:36.000Z</published>
+    <updated>2023-05-09T05:25:36.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-容器之-Set&quot;&gt;&lt;a href=&quot;#Java-容器之-Set&quot; class=&quot;headerlink&quot; title=&quot;Java 容器之 Set&quot;&gt;&lt;/a&gt;Java 容器之 Set&lt;/h1&gt;&lt;h2 id=&quot;Set-简介&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="容器" scheme="https://xjb430.gitee.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java容器简介</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683609757/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683609757/</id>
+    <published>2023-05-09T05:22:30.000Z</published>
+    <updated>2023-05-09T05:22:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-容器简介&quot;&gt;&lt;a href=&quot;#Java-容器简介&quot; class=&quot;headerlink&quot; title=&quot;Java 容器简介&quot;&gt;&lt;/a&gt;Java 容器简介&lt;/h1&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+    <category term="容器" scheme="https://xjb430.gitee.io/tags/%E5%AE%B9%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java编程规范</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683609697/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683609697/</id>
+    <published>2023-05-09T05:21:30.000Z</published>
+    <updated>2023-05-09T05:21:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-编程规范&quot;&gt;&lt;a href=&quot;#Java-编程规范&quot; class=&quot;headerlink&quot; title=&quot;Java 编程规范&quot;&gt;&lt;/a&gt;Java 编程规范&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;编程规范就是 Java</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java国际化</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683596795/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683596795/</id>
+    <published>2023-05-09T01:29:30.000Z</published>
+    <updated>2023-05-09T01:29:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-国际化&quot;&gt;&lt;a href=&quot;#Java-国际化&quot; class=&quot;headerlink&quot; title=&quot;Java 国际化&quot;&gt;&lt;/a&gt;Java 国际化&lt;/h1&gt;&lt;h2 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java编码和加密</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683595595/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683595595/</id>
+    <published>2023-05-09T01:26:30.000Z</published>
+    <updated>2023-05-09T01:26:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-编码和加密&quot;&gt;&lt;a href=&quot;#Java-编码和加密&quot; class=&quot;headerlink&quot; title=&quot;Java 编码和加密&quot;&gt;&lt;/a&gt;Java</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java正则</title>
+    <link href="https://xjb430.gitee.io/2023/05/09/1683591981/"/>
+    <id>https://xjb430.gitee.io/2023/05/09/1683591981/</id>
+    <published>2023-05-09T00:26:30.000Z</published>
+    <updated>2023-05-09T00:26:30.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Java-正则从入门到精通&quot;&gt;&lt;a href=&quot;#Java-正则从入门到精通&quot; class=&quot;headerlink&quot; title=&quot;Java 正则从入门到精通&quot;&gt;&lt;/a&gt;Java</summary>
+        
+      
+    
+    
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
+    
+    
+    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
+    
+    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
+    
+  </entry>
   
   <entry>
     <title>Java注解</title>
@@ -290,234 +573,6 @@
     <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
     
     <category term="数据类型" scheme="https://xjb430.gitee.io/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java基础语法</title>
-    <link href="https://xjb430.gitee.io/2023/05/06/1683339990/"/>
-    <id>https://xjb430.gitee.io/2023/05/06/1683339990/</id>
-    <published>2023-05-06T02:26:30.000Z</published>
-    <updated>2023-05-06T02:26:30.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Java-基础语法特性&quot;&gt;&lt;a href=&quot;#Java-基础语法特性&quot; class=&quot;headerlink&quot; title=&quot;Java 基础语法特性&quot;&gt;&lt;/a&gt;Java 基础语法特性&lt;/h1&gt;&lt;h2 id=&quot;注释&quot;&gt;&lt;a href=&quot;#注释&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="JavaSE" scheme="https://xjb430.gitee.io/categorie/JavaSE/"/>
-    
-    
-    <category term="Java" scheme="https://xjb430.gitee.io/tags/Java/"/>
-    
-    <category term="JavaSE" scheme="https://xjb430.gitee.io/tags/JavaSE/"/>
-    
-    <category term="基础特性" scheme="https://xjb430.gitee.io/tags/%E5%9F%BA%E7%A1%80%E7%89%B9%E6%80%A7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>高并发场景乐观锁与悲观锁</title>
-    <link href="https://xjb430.gitee.io/2022/07/07/1657201658/"/>
-    <id>https://xjb430.gitee.io/2022/07/07/1657201658/</id>
-    <published>2022-07-07T13:47:38.000Z</published>
-    <updated>2022-07-07T14:16:31.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;当程序中可能出现并发的情况时，就需要保证在并发情况下数据的准确性，以此确保当前用户和其他用户一起操作时，所得到的结果和他单独操作时的结果是一样的。这就叫做并发控制。并发控制的目的是保证一个用户的工作不会对另一个用户的工作产生不合理的影响。&lt;/p&gt;
-</summary>
-        
-      
-    
-    
-    
-    <category term="Java锁" scheme="https://xjb430.gitee.io/categorie/Java%E9%94%81/"/>
-    
-    
-    <category term="高并发" scheme="https://xjb430.gitee.io/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/"/>
-    
-    <category term="Java锁" scheme="https://xjb430.gitee.io/tags/Java%E9%94%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Nginx跨域的解决方法</title>
-    <link href="https://xjb430.gitee.io/2022/01/20/1642656872/"/>
-    <id>https://xjb430.gitee.io/2022/01/20/1642656872/</id>
-    <published>2022-01-20T05:34:31.000Z</published>
-    <updated>2022-01-20T05:34:31.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;  博主开发了一个动静分离的博客，动静分离免不了静态资源和后台代码的部署，静态资源管理我用的是Nginx反向代理服务器。选择Nginx的原因是它内存消耗少、稳定性高、代码相对简单些。在项目编写的时候博主就遇到了浏览器的跨域问题，而本篇文章将讲述跨域</summary>
-        
-      
-    
-    
-    
-    <category term="Nginx" scheme="https://xjb430.gitee.io/categorie/Nginx/"/>
-    
-    
-    <category term="nginx" scheme="https://xjb430.gitee.io/tags/nginx/"/>
-    
-    <category term="跨域" scheme="https://xjb430.gitee.io/tags/%E8%B7%A8%E5%9F%9F/"/>
-    
-    <category term="cookie" scheme="https://xjb430.gitee.io/tags/cookie/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Lombok的简介与使用以及总结</title>
-    <link href="https://xjb430.gitee.io/2022/01/20/1642656390/"/>
-    <id>https://xjb430.gitee.io/2022/01/20/1642656390/</id>
-    <published>2022-01-20T05:26:30.000Z</published>
-    <updated>2022-01-20T05:26:30.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;  我们在开发中经常需要花很多时间给JavaBean的属性写getter/setter方法和构造器等，这是一个漫长而又繁琐的过程。而Lombok应运而生，它可以用简单的注解形式来简化java代码，比如说可以使用几个注解就不需要编写getter/se</summary>
-        
-      
-    
-    
-    
-    <category term="Lombok" scheme="https://xjb430.gitee.io/categorie/Lombok/"/>
-    
-    
-    <category term="Lombok" scheme="https://xjb430.gitee.io/tags/Lombok/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>win10中docker的安装与使用</title>
-    <link href="https://xjb430.gitee.io/2022/01/14/1642151984/"/>
-    <id>https://xjb430.gitee.io/2022/01/14/1642151984/</id>
-    <published>2022-01-14T09:19:44.000Z</published>
-    <updated>2022-01-14T09:19:44.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows</summary>
-        
-      
-    
-    
-    
-    <category term="docker" scheme="https://xjb430.gitee.io/categorie/docker/"/>
-    
-    
-    <category term="docker for windows" scheme="https://xjb430.gitee.io/tags/docker-for-windows/"/>
-    
-    <category term="docker" scheme="https://xjb430.gitee.io/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MybatisPlus代码生成器AutoGenerator的简介和使用</title>
-    <link href="https://xjb430.gitee.io/2022/01/14/1642136664/"/>
-    <id>https://xjb430.gitee.io/2022/01/14/1642136664/</id>
-    <published>2022-01-14T07:15:00.000Z</published>
-    <updated>2022-01-14T07:15:00.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;  AutoGenerator 是 MyBatis-Plus 的代码生成器，通过 AutoGenerator 可以快速生成 Entity、Mapper、Mapper XML、Service、Controller</summary>
-        
-      
-    
-    
-    
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/categorie/Mybatis/"/>
-    
-    
-    <category term="MybatisPlus" scheme="https://xjb430.gitee.io/tags/MybatisPlus/"/>
-    
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/tags/Mybatis/"/>
-    
-    <category term="AutoGenerator" scheme="https://xjb430.gitee.io/tags/AutoGenerator/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MybatisPlus中通用mapper的CRUD操作封装</title>
-    <link href="https://xjb430.gitee.io/2022/01/14/1642144500/"/>
-    <id>https://xjb430.gitee.io/2022/01/14/1642144500/</id>
-    <published>2022-01-14T05:04:24.000Z</published>
-    <updated>2022-01-14T05:04:24.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;  使用Mybatis的开发者，大多数都会遇到一个问题，就是要写&lt;strong&gt;大量的SQL在xml文件&lt;/strong&gt;中，除了特殊的业务逻辑SQL之外，还有&lt;strong&gt;大量结构类似的增删改查SQL&lt;/strong&gt;。而且，当数据库表结构改动</summary>
-        
-      
-    
-    
-    
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/categorie/Mybatis/"/>
-    
-    
-    <category term="MybatisPlus" scheme="https://xjb430.gitee.io/tags/MybatisPlus/"/>
-    
-    <category term="Mybatis" scheme="https://xjb430.gitee.io/tags/Mybatis/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue-cli脚手架的简介与搭建</title>
-    <link href="https://xjb430.gitee.io/2022/01/14/1642120427/"/>
-    <id>https://xjb430.gitee.io/2022/01/14/1642120427/</id>
-    <published>2022-01-14T00:33:47.000Z</published>
-    <updated>2022-01-14T00:33:47.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;  &lt;strong&gt;Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统&lt;/strong&gt;，我们可以通过 vue-cli 这种脚手架工具来快速搭建vue项目。vue-cli</summary>
-        
-      
-    
-    
-    
-    <category term="前端vue" scheme="https://xjb430.gitee.io/categorie/%E5%89%8D%E7%AB%AFvue/"/>
-    
-    
-    <category term="vue-cli" scheme="https://xjb430.gitee.io/tags/vue-cli/"/>
-    
-    <category term="vue" scheme="https://xjb430.gitee.io/tags/vue/"/>
     
   </entry>
   
